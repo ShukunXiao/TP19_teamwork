@@ -1,0 +1,20 @@
+.dr-summary-holder{
+    &.dr-recipe-card-block{
+        padding: 3.4444em 2.2222em;
+        .dr-extra-meta{
+            .dr-sim-metaa{
+                &.dr-cook-time{
+                    justify-content: space-between;
+                    > span{
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "../../public/sass/_card-layout.scss";
+@import "../../public/sass/_utils.scss";

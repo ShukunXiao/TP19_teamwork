@@ -1,0 +1,796 @@
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $primary-font;
+    background-color: $body-bg-color;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba($font-color, .9);
+}
+
+.d-none{
+    display: none !important;
+}
+
+p{
+    margin-bottom: 15px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+strong{
+    font-weight: 600;
+}
+
+hr{
+    border-top: 1px solid rgba($font-color, .05);
+    border-bottom: none;
+    margin: 15px 0;
+}
+
+.pl-0{
+    padding-left: 0 !important;
+}
+
+.pr-0{
+    padding-right: 0 !important;
+}
+
+.pb-0{
+    padding-bottom: 0 !important;
+}
+
+.pt-0{
+    padding-top: 0 !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.dr-recipes-warning-info{
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px solid rgba(#FCBE17, .1);
+    background-color: rgba(#FCBE17, .03);
+    border-radius: 10px;
+    margin-bottom: 45px;
+    p{
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba($font-color, .9);
+    }
+}
+
+.top-controller{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev-button{
+    align-self: center;
+    display: none;
+    font-size: 16px;
+    color: rgba($font-color, .8);
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-bottom: 25px;
+    &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="5.58" height="9.292" viewBox="0 0 5.58 9.292"><g id="Path_26466" data-name="Path 26466" opacity="0.5"><path id="Path_26493" data-name="Path 26493" d="M847.74,501.2a.869.869,0,0,0,.6-1.493l-3.218-3.109,3.111-3.218a.869.869,0,0,0-1.249-1.207l-3.714,3.843a.868.868,0,0,0,.021,1.228l3.843,3.713A.866.866,0,0,0,847.74,501.2Z" transform="translate(-843.028 -491.904)" fill="%2325282e"/></g></svg>');
+        background-size: 5.58px 9.29px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+        transition: all .2s linear;
+    }
+    &:hover{
+        color: $primary-color;
+        &::before{
+            transform: translateX(-5px);
+            background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="5.58" height="9.292" viewBox="0 0 5.58 9.292"><g id="Path_26466" data-name="Path 26466" opacity="0.5"><path id="Path_26493" data-name="Path 26493" d="M847.74,501.2a.869.869,0,0,0,.6-1.493l-3.218-3.109,3.111-3.218a.869.869,0,0,0-1.249-1.207l-3.714,3.843a.868.868,0,0,0,.021,1.228l3.843,3.713A.866.866,0,0,0,847.74,501.2Z" transform="translate(-843.028 -491.904)" fill="%232DB68D"/></g></svg>');
+        }
+    }
+}
+
+.btn, .button{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px 25px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.112;
+    cursor: pointer;
+    text-align: center;
+    // min-width: 285px;
+    @media(min-width: 576px){
+        font-size: 16px;
+    }
+    @media(min-width: 768px){
+        font-size: 18px;
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="6.64" height="10.337" viewBox="0 0 6.64 10.337"><g id="Path_26466" data-name="Path 26466" transform="translate(0.582 0.583)"><path id="Path_26493" data-name="Path 26493" d="M843.893,501.159a.865.865,0,0,1-.6-1.487l3.205-3.1-3.1-3.205a.865.865,0,0,1,1.244-1.2l3.7,3.827a.865.865,0,0,1-.021,1.223l-3.827,3.7A.862.862,0,0,1,843.893,501.159Z" transform="translate(-843.028 -491.904)" fill="%23fff" stroke="rgba(0,0,0,0)" stroke-width="1"/></g></svg>');
+        width: 11px;
+        height: 11px;
+        background-size: 6.58px 10.96px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+        transition: all .3s ease;
+    }
+    &:hover{
+        &::after{
+            transform: translateX(5px);
+        }
+    }
+}
+
+.skip-link{
+    font-size: 16px;
+    color: $primary-color;
+    text-decoration: none;
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="5.58" height="9.292" viewBox="0 0 5.58 9.292"><g id="Path_26466" data-name="Path 26466" opacity="1"><path id="Path_26493" data-name="Path 26493" d="M847.74,501.2a.869.869,0,0,0,.6-1.493l-3.218-3.109,3.111-3.218a.869.869,0,0,0-1.249-1.207l-3.714,3.843a.868.868,0,0,0,.021,1.228l3.843,3.713A.866.866,0,0,0,847.74,501.2Z" transform="translate(-843.028 -491.904)" fill="%232db68d"/></g></svg>');
+        width: 10px;
+        height: 10px;
+        background-size: 5.56px 9.25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+        transition: all .3s ease;
+    }
+    &:hover{
+        &::before{
+            transform: translateX(-5px);
+        }
+    }
+}
+
+.dr-field{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    &.flex-direction-row{
+        @media(min-width: 576px){
+            flex-direction: row;
+            grid-gap: 20px;
+        }
+    }
+    &.align-items-center{
+        align-items: center;
+    }
+    &.equal-column{
+        .dr-field-label{
+            @media(min-width: 576px){
+                flex: 0 0 190px;
+                max-width: 190px;
+            }
+        }
+    }
+}
+
+.dr-field-label{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.dr-field-input-wrap{
+    flex: auto;
+}
+
+.dr-field-input, select{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba($font-color, .8);
+    padding: 15px;
+    border: 1px solid rgba($font-color, .15);
+    border-radius: 3px;
+    height: 50px;
+    flex: auto;
+    width: 100%;
+}
+
+select{
+    max-width: 300px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    padding-right: 26px;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="6" viewBox="0 0 11.25 6"><path id="Polygon_12" data-name="Polygon 12" d="M4.9.778a1,1,0,0,1,1.459,0L9.671,4.316A1,1,0,0,1,8.942,6H2.308a1,1,0,0,1-.73-1.684Z" transform="translate(11.25 6) rotate(180)" fill="%2325282e" opacity="0.6"/></svg>');
+    background-size: 11.25px 6px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.dr-fields{
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.dr-fields-title{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba($font-color, .9);
+    margin-bottom: 15px;
+}
+
+.dr-field-description{
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba($font-color, .7);
+    margin-bottom: 12px;
+}
+
+.dr-checkbox-wrap{
+    display: inline-flex;
+    label{
+        display: inline-flex;
+        width: 41px;
+        height: 24px;
+        border-radius: 22px;
+        background-color: rgba(#000, .15);
+        padding: 3px;
+        transition: all .2s linear;
+        cursor: pointer;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all .3s ease;
+        }
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    input[type=checkbox]:checked + label{
+        background-color: $primary-color;
+        &::before{
+            box-shadow: -4px 1px 7px rgba(#000, .13);
+            transform: translateX(17px);
+        }
+    }
+}
+
+.dr-recipes-onboard-steps-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    @media(min-width: 576px){
+        width: calc(100% - 60px);
+    }
+    @media(min-width: 768px){
+        width: calc(100% - 100px);
+    }
+}
+
+.dr-recipes-main-wrap{
+    .dr-recipes-onboard-header{
+        background-color: #fff;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 50px;
+        .delicious-recipes-brand{
+            display: inline-block;
+            max-width: 241px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .dr-recipes-onboard-steps-wrapper{
+        padding-bottom: 50px;
+        .dr-recipes-onboard-steps-banner{
+            background-color: #fff;
+            padding: 30px;
+            position: relative;
+            @media(min-width: 576px){
+                padding: 90px;
+            }
+            &::before{
+                content: "";
+                width: 21px;
+                height: 21.83px;
+                background-image: url("../img/leaf-2.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 155px;
+                left: -10px;
+            }
+            &::after{
+                content: "";
+                width: 17.57px;
+                height: 23.6px;
+                background-image: url("../img/leaf.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 118px;
+                right: -5px;
+            }
+            .onboard-banner-content-wrapper{
+                text-align: center;
+                max-width: 700px;
+                margin: 0 auto;
+                .onboard-banner-subtitle, .onboard-banner-title, .onboard-banner-subtext{
+                    margin-bottom: 15px;
+                }
+                .onboard-banner-subtitle{
+                    font-size: 16px;
+                    line-height: 1;
+                    font-style: italic;
+                    font-weight: 400;
+                    @media(min-width: 576px){
+                        font-size: 28px;
+                        line-height: 43px;
+                    }
+                }
+                .onboard-banner-title{
+                    font-size: 26px;
+                    line-height: 1;
+                    @media(min-width: 576px){
+                        font-size: 48px;
+                        line-height: 72px;
+                    }
+                }
+            }
+            &.dr-recipes-onboard-steps-start{
+                .onboard-banner-content-wrapper{
+                    @media(min-width: 768px){
+                        padding: 0 42px;
+                    }
+                }
+            }
+            &.dr-recipes-onboard-steps-end{
+                display: none;
+            }
+            .onboard-banner-social-logos-area{
+                max-width: 813px;
+                margin: 60px auto 20px;
+                text-align: center;
+                padding: 35px;
+                position: relative;
+                border-top: 1px solid rgba($font-color, .05);
+                border-bottom: 1px solid rgba($font-color, .05);
+                .onboard-banner-social-title{
+                    font-size: 16px;
+                    font-style: italic;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    padding: 15px;
+                }
+                .social-logos-list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    grid-gap: 15px;
+                    list-style: none;
+                    margin: 0;
+                    [class*="logo-"]{
+                        min-width: 105px;
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #fff;
+                        background-color:$primary-color;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        &::before{
+                            content: "";
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            background-size: auto 100%;
+                            background-repeat: no-repeat;
+                            background-position: right center;
+                        }
+                    }
+                    .logo-facebook{
+                        background-color: #3B5998;
+                        &::before{
+                            background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="6.888" height="13.775" viewBox="0 0 6.888 13.775"><path id="facebook_3_" data-name="facebook (3)" d="M11.817,2.287h1.258V.1A16.238,16.238,0,0,0,11.243,0,2.908,2.908,0,0,0,8.188,3.236V5.166h-2V7.614h2v6.161h2.453V7.615h1.92l.3-2.448H10.64V3.479c0-.708.191-1.192,1.177-1.192Z" transform="translate(-6.187 0)" fill="%23fff"/></svg>');
+                        }
+                    }
+                    .logo-twitter{
+                        background-color: #00ACEE;
+                        &::before{
+                            background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="14.905" height="12.11" viewBox="0 0 14.905 12.11"><path id="twitter" d="M14.905,49.434a6.372,6.372,0,0,1-1.761.483,3.039,3.039,0,0,0,1.344-1.689,6.107,6.107,0,0,1-1.938.74,3.056,3.056,0,0,0-5.286,2.089,3.146,3.146,0,0,0,.071.7,8.649,8.649,0,0,1-6.3-3.2,3.056,3.056,0,0,0,.939,4.084A3.018,3.018,0,0,1,.6,52.265V52.3a3.07,3.07,0,0,0,2.448,3,3.05,3.05,0,0,1-.8.1,2.7,2.7,0,0,1-.579-.052A3.085,3.085,0,0,0,4.52,57.477a6.14,6.14,0,0,1-3.789,1.3A5.723,5.723,0,0,1,0,58.739,8.6,8.6,0,0,0,4.688,60.11a8.637,8.637,0,0,0,8.7-8.695c0-.135,0-.265-.011-.395A6.1,6.1,0,0,0,14.905,49.434Z" transform="translate(0 -48)" fill="%23fff"/></svg>');
+                            background-size: 100% auto;
+                        }
+                    }
+                    .logo-linkedin{
+                        background-color: #0E76A8;
+                        &::before{
+                            background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="12.58" height="12.581" viewBox="0 0 12.58 12.581"><path d="M136.58,7331.58h-2.516v-4.4c0-1.208-.533-1.881-1.488-1.881-1.04,0-1.657.7-1.657,1.881v4.4H128.4V7323.4h2.516v.919a3.033,3.033,0,0,1,2.568-1.385c1.779,0,3.093,1.086,3.093,3.333Zm-11.044-9.485a1.548,1.548,0,1,1,1.535-1.548,1.542,1.542,0,0,1-1.535,1.548ZM124,7331.58h3.145V7323.4H124Z" transform="translate(-124 -7319)" fill="%23ffffff" fill-rule="evenodd"/></svg>');
+                        }
+                    }
+                }
+            }
+            .onboard-banner-footer-area{
+                padding-top: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-gap: 20px;
+            }
+        }
+    }
+    .dr-recipes-onboard-steps{
+        display: none;
+        flex-direction: column;
+        @media(min-width: 992px){
+            flex-direction: row;
+        }
+        .dr-recipes-onboard-step-menu{
+            margin-bottom: 35px;
+            @media(min-width: 992px){
+                flex: 0 0 237px;
+                margin-bottom: 0;
+            }
+            .dr-recipes-onboard-step-count{
+                font-size: 16px;
+                font-weight: 600;
+                opacity: .5;
+                @media(max-width: 991px){
+                    text-align: center;
+                }
+            }
+            .onboard-step-menu-list{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                counter-reset: count;
+                display: flex;
+                flex-direction: column;
+                grid-gap: 50px;
+                margin-top: 35px;
+                @media(max-width: 991px){
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                li{
+                    font-size: 16px;
+                    line-height: 28px;
+                    padding-left: 28px;
+                    position: relative;
+                    counter-increment: count;
+                    color: rgba($font-color, .4);
+                    @media(max-width: 991px){
+                        padding-left: 0;
+                        padding-top: 28px;
+                        text-align: center;
+                        line-height: 1;
+                        font-size: 13px;
+                    }
+                    &::before{
+                        content: counter(count);
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        box-shadow: 0 0 0 2px rgba(#0A083B, .1);
+                        box-sizing: border-box;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s ease;
+                        @media(max-width: 991px){
+                            top: 0;
+                            left: 50%;
+                        }
+                    }
+                    &:not(:last-child){
+                        &::after{
+                            content: "";
+                            width: 1px;
+                            height: 50px;
+                            border-left: 2px solid rgba($font-color, .1);
+                            position: absolute;
+                            left: 0;
+                            top: 100%;
+                            transform: translateX(-50%);
+                            @media(max-width: 991px){
+                                display: none;
+                                height: 1px;
+                                width: calc(50% + 50px);
+                                border-left: none;
+                                border-top: 2px solid rgba($font-color, .1);
+                                left: 50%;
+                                top: 0;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                        pointer-events: none;
+                    }
+                    &.active, &.finish{
+                        color: rgba($font-color, .8);
+                        &::before{
+                            box-shadow: none;
+                            color: #fff;
+                            background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><circle id="Ellipse_26" data-name="Ellipse 26" cx="14" cy="14" r="14" fill="%232db68d"/></svg>');
+                            background-size: 28px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                    &.active{
+                        &::before{
+                            width: 34px;
+                            height: 34px;
+                            border: 1px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .dr-recipes-onboard-step-list{
+            flex: auto;
+            #prevStep{
+                @media(max-width: 991px){
+                    display: none !important;
+                }
+            }
+            .dr-recipes-onboard-step-list-wrapper{
+                background-color: #fff;
+                padding: 0 20px;
+                font-size: 18px;
+                line-height: 27px;
+                position: relative;
+                @media(min-width: 576px){
+                    padding: 0 45px;
+                }
+                #stepBar{
+                    display: inline-block;
+                    max-width: 100%;
+                    height: 2px;
+                    background-color: rgba($primary-color, .3);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all .3s ease;
+                }
+                .dr-recipes-onboard-step-item{
+                    display: none;
+                    .dr-recipes-onboard-step-header{
+                        padding: 20px 0;
+                        border-bottom: 1px solid rgba($font-color, .05);
+                        margin-bottom: 40px;
+                        h3{
+                            font-size: 22px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .dr-color{
+                    width: 246px;
+                    float: left;
+                    text-align: center;
+                    .sketch-picker{
+                        width: 225px !important;
+                    }
+                }
+                .dr-color + .dr-color{
+                    margin-left: 54px;
+                }
+            }
+            .dr-recipes-onboard-step-controller{
+                padding: 30px;
+                background-color: #fff;
+                border-top: 1px solid rgba($font-color, .05);
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                grid-gap: 25px;
+                align-items: center;
+                margin-top: 50px;
+                @media(max-width: 767px){
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px){
+    .d-lg-block{
+        display: block !important;
+    }
+    .d-lg-inline-block{
+        display: inline-block !important;
+    }
+    .d-lg-none{
+        display: none !important;
+    }
+    .prev-button-mobile{
+        display: none !important;
+    }
+    .top-controller.mobile{
+        display: none;
+    }
+}
+
+@media(max-width: 991px){
+    .top-controller{
+        display: none;
+        &.mobile{
+            display: flex;
+        }
+    }
+}
+
+
+.onboard-banner-content-wrapper {
+
+    .dr-checkbox-wrap {
+        display: block;
+
+        label {
+            width: auto;
+            height: auto;
+            background: none;
+            border-radius: 0;
+            padding: 0 0 0 30px;
+            font-size: 16px;
+            position: relative;
+            line-height: 1.6;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 0px;
+                z-index: 1;
+                background: transparent;
+                border: 2px solid rgba(0, 0, 0, 0.15);
+                width: 16px;
+                height: 16px;
+                box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
+            }
+        }
+
+        input[type="checkbox"]:checked {
+
+            + label {
+                background: none;
+
+                &::before {
+                    background: #2DB68D;
+                    border-color: #fff;
+                    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    transform: none;
+                }
+            }
+
+        }
+
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+}//.onboard-banner-content-wrapper
+
+/*===========================
+TOAST MESSAGE STYLE
+===========================*/
+#toast-container > div {
+	text-align: center;
+	box-shadow: none;
+	border-radius: 0;
+	margin: 0;
+	background: #2db68d;
+	padding: 10px;
+	opacity: 1;
+}
+
+#toast-container.toast-bottom-full-width > div,
+#toast-container.toast-top-full-width > div {
+	width: 100%;
+}
+
+#toast-container > div.toast-success {
+	background-image: none !important;
+}
+
+#toast-container > div div {
+	display: table;
+	margin: 0 auto;
+}
+
+#toast-container .toast-message {
+	font-size: 18px;
+	line-height: 1.5;
+	position: relative;
+	min-height: 45px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 55px;
+	letter-spacing: 0.3px;
+}
+
+#toast-container .toast-message::before {
+	content: "";
+	width: 33px;
+	height: 33px;
+	background-color: #fff;
+	background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%2300CE66" d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"></path></svg>');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border-radius: 100%;
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.23);
+	-webkit-transform: translateY(-45%);
+	-moz-transform: translateY(-45%);
+	transform: translateY(-45%);
+}
+
+#toast-container > .toast-error {
+	background-image: none !important;
+	background-color: #fe623d;
+}
+
+#toast-container > .toast-error .toast-message::before {
+	background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="%23FE623D" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg>');
+	background-size: 14px;
+}
+
+#toast-container > .toast-warning {
+	background-image: none !important;
+	background-color: #ffb702;
+}
+
+#toast-container > .toast-warning .toast-message::before {
+	background-image: url('data:image/svg+xml; utf-8, <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301.691 301.691" xml:space="preserve" fill="%23FFB702"><polygon points="119.151,0 129.6,218.406 172.06,218.406 182.54,0"></polygon><rect x="130.563" y="261.168" width="40.525" height="40.523"></rect></svg>');
+}

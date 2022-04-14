@@ -1,0 +1,2423 @@
+# Copyright (C) 2021 WP Delicious
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Delicious Recipes Pro 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/delicious-recipes-"
+"pro\n"
+"Last-Translator: \n"
+"Language-Team: Türkçe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-10T03:19:14+00:00\n"
+"PO-Revision-Date: 2021-10-16 17:00+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: tr-TR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1"
+
+#. Plugin Name of the plugin
+msgid "Delicious Recipes Pro"
+msgstr "Delicious Recipes Pro"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/delicious-recipes-pro/"
+msgstr "https://wordpress.org/plugins/delicious-recipes-pro/"
+
+#. Description of the plugin
+msgid ""
+"Delicious Recipes Pro includes tons of extra essential features to make it "
+"easier to publish and share your recipes for bloggers."
+msgstr ""
+"Delicious Recipes Pro, tariflerinizi blogcular için yayınlamayı ve "
+"paylaşmayı kolaylaştırmak için tonlarca ekstra temel özellik içerir."
+
+#. Author of the plugin
+#: includes/updater/class-delicious-recipes-pro-updater.php:139 
+#: includes/updater/class-delicious-recipes-pro-updater.php:390 
+#: includes/updater/class-delicious-recipes-pro-updater.php:447
+msgid "WP Delicious"
+msgstr "WP Delicious"
+
+#. Author URI of the plugin
+msgid "https://wpdelicious.com/"
+msgstr "https://wpdelicious.com/"
+
+#: includes/classes/class-delicious-recipes-pro-analytics-dashboard.php:29 
+#: includes/classes/class-delicious-recipes-pro-analytics-dashboard.php:30
+msgid "Analytics Dashboard"
+msgstr "Analitik Kontrol Paneli"
+
+#: includes/classes/class-delicious-recipes-pro-analytics-dashboard.php:74
+msgid "Good Morning"
+msgstr "Günaydın"
+
+#: includes/classes/class-delicious-recipes-pro-analytics-dashboard.php:75
+msgid "Good Afternoon"
+msgstr "Tünaydın"
+
+#: includes/classes/class-delicious-recipes-pro-analytics-dashboard.php:76
+msgid "Good Evening"
+msgstr "İyi akşamlar"
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:52
+msgid "Recipes Found."
+msgstr "Tarifler Bulundu."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:62
+msgid "Recipes not found."
+msgstr "Tarif bulunamadı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:79
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:100
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:113
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:454
+msgid "You cannot view the post resource."
+msgstr "Gönderi kaynağını görüntüleyemezsiniz."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:196
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:243
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:585
+msgid "Unique identifier for the object."
+msgstr "Nesne için benzersiz tanımlayıcı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:202
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:249
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:591
+msgid "The date the object was published, in the site's timezone."
+msgstr "Sitenin saat diliminde nesnenin yayınlandığı tarih."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:208
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:255
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:597
+msgid "The title for the object."
+msgstr "Nesnenin başlığı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:217
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:264
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:606
+msgid "Title for the object, as it exists in the database."
+msgstr "Veritabanında olduğu gibi nesnenin başlığı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:222
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:269
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:611
+msgid "HTML title for the object, transformed for display."
+msgstr "Nesne için HTML başlığı, görüntülenmek üzere dönüştürülmüş."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:230
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:277
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:619
+msgid "URL to the object."
+msgstr "Nesnenin URL'si."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:237
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:284
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:626
+msgid "The date the object was last modified, in the site's timezone."
+msgstr "Sitenin saat diliminde nesnenin en son değiştirildiği tarih."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:244
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:291
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:633
+msgid "The date the object was last modified, as GMT."
+msgstr "GMT olarak nesnenin en son değiştirildiği tarih."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:251
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:298
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:640
+msgid "A named status for the object."
+msgstr "Nesne için adlandırılmış bir durum."
+
+#: includes/classes/class-delicious-recipes-pro-rest-analytics-controller.php:257
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:304
+#:  includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:646
+msgid "Type of Post for the object."
+msgstr "Nesne için Gönderi Türü."
+
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:59
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:77
+#:  
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:150
+msgid "Equipment not found by ID."
+msgstr "Kimlik (ID) tarafından bulunmayan ekipman."
+
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:70
+msgid "Equipment Settings Saved Successfully."
+msgstr "Ekipman Ayarları Başarıyla Kaydedildi."
+
+#: includes/classes/class-delicious-recipes-pro-rest-equipment-controller.php:144
+msgid "Equipment Found."
+msgstr "Ekipman Bulundu."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:89 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:256
+msgid "Nonce verification failed."
+msgstr "Nonce doğrulama başarısız oldu."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:152 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:172 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:266 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:291 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:491
+msgid "Recipe not found by ID."
+msgstr "Tarif kimlik tarafından bulunamadı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:163 
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:283
+msgid "Recipe Settings Saved Successfully."
+msgstr "Tarif Ayarları Başarıyla Kaydedildi."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:407
+msgid "Recipe Submissions Found."
+msgstr "Tarif Gönderimleri Bulundu."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:417
+msgid "Recipe Submissions not found."
+msgstr "Tarif Gönderimleri bulunamadı."
+
+#: includes/classes/class-delicious-recipes-pro-rest-recipe-controller.php:485
+msgid "Recipe Found."
+msgstr "Tarif Bulundu."
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:42 
+#: includes/classes/class-delicious-recipes-pro-reviews.php:43 
+#: templates/single-recipe-reviews.php:175 
+#: assets/admin/recipe-reviews/recipeReviews.jsx:275 assets/build/reviews.js:1
+msgid "Reviews"
+msgstr "İncelemeler"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:108
+msgid "Please rate the recipe."
+msgstr "Lütfen tarifi değerlendirin."
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:158
+msgid "Reviews - Delicious Recipes"
+msgstr "İncelemeler - Delicious Recipes"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:173 
+#: includes/classes/class-delicious-recipes-pro-reviews.php:269
+msgid "Rating"
+msgstr "Değerlendirme"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:188
+msgid "Gallery Images"
+msgstr "Galeri Resimleri"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:192
+msgid "Add image to gallery"
+msgstr "Galeriye resim ekle"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:193 
+#: includes/classes/class-delicious-recipes-pro-reviews.php:194
+msgid "Add Image(s)"
+msgstr "Resim ekle"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:207 
+#: includes/classes/class-delicious-recipes-pro-reviews.php:209
+msgid "Change Image"
+msgstr "Resmi değiştir"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:208
+msgid "Change image"
+msgstr "Resmi değiştir"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:210 
+#: assets/build/usrdashboard.js:3
+msgid "Replace"
+msgstr "Replace"
+
+#: includes/classes/class-delicious-recipes-pro-reviews.php:213 
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:166 assets/build/recipe.js:1 
+#: assets/build/usrdashboard.js:3
+msgid "Delete"
+msgstr "Sil"
+
+#: includes/classes/class-delicious-recipes-pro-template-hooks.php:165
+msgid ""
+"Reply <i>\n"
+"                                            <svg xmlns=\"http://www.w3."
+"org/2000/svg\" width=\"14.193\"\n"
+"                                                height=\"9.647\" viewBox=\"0 "
+"0 14.193 9.647\">\n"
+"                                                <g id=\"Group_5394\" data-"
+"name=\"Group 5394\"\n"
+"                                                    transform=\"translate(0."
+"5 0.707)\">\n"
+"                                                    <path id=\"Path_26348\" "
+"data-name=\"Path 26348\"\n"
+"                                                        d=\"M7820.11-1126."
+"021l4.117,4.116-4.117,4.116\"\n"
+"                                                        "
+"transform=\"translate(-7811.241 1126.021)\"\n"
+"                                                        fill=\"none\" "
+"stroke=\"#2db68d\" stroke-linecap=\"round\"\n"
+"                                                        stroke-width=\"1\" />"
+"\n"
+"                                                    <path id=\"Path_26365\" "
+"data-name=\"Path 26365\"\n"
+"                                                        d=\"M6555.283-354."
+"415h-12.624\"\n"
+"                                                        "
+"transform=\"translate(-6542.659 358.532)\" fill=\"none\"\n"
+"                                                        stroke=\"#2db68d\" "
+"stroke-linecap=\"round\"\n"
+"                                                        stroke-width=\"1\" />"
+"\n"
+"                                                </g>\n"
+"                                            </svg>\n"
+"                                        </i>"
+msgstr ""
+"Cevap ver <i>\n"
+"                                            <svg xmlns=\"http://www.w3."
+"org/2000/svg\" width=\"14.193\"\n"
+"                                                height=\"9.647\" viewBox=\"0 "
+"0 14.193 9.647\">\n"
+"                                                <g id=\"Group_5394\" data-"
+"name=\"Group 5394\"\n"
+"                                                    transform=\"translate(0."
+"5 0.707)\">\n"
+"                                                    <path id=\"Path_26348\" "
+"data-name=\"Path 26348\"\n"
+"                                                        d=\"M7820.11-1126."
+"021l4.117,4.116-4.117,4.116\"\n"
+"                                                        "
+"transform=\"translate(-7811.241 1126.021)\"\n"
+"                                                        fill=\"none\" "
+"stroke=\"#2db68d\" stroke-linecap=\"round\"\n"
+"                                                        stroke-width=\"1\" />"
+"\n"
+"                                                    <path id=\"Path_26365\" "
+"data-name=\"Path 26365\"\n"
+"                                                        d=\"M6555.283-354."
+"415h-12.624\"\n"
+"                                                        "
+"transform=\"translate(-6542.659 358.532)\" fill=\"none\"\n"
+"                                                        stroke=\"#2db68d\" "
+"stroke-linecap=\"round\"\n"
+"                                                        stroke-width=\"1\" />"
+"\n"
+"                                                </g>\n"
+"                                            </svg>\n"
+"                                        </i>"
+
+#: includes/classes/emails/admin-new-recipe-submission.php:77
+msgid "[{site_title}]: New recipe submission has been received!"
+msgstr "[{site_title}]: Yeni tarif gönderimi alındı!"
+
+#: includes/classes/emails/new-recipe-submission.php:63 
+#: includes/Delicious_Recipes_Pro_Admin.php:200 
+#: assets/admin/global-hooks/defaultSettings.jsx:20 assets/build/global.js:1
+msgid "Your recipe submission has been received!"
+msgstr "Tarif gönderiminiz alındı!"
+
+#: includes/classes/emails/recipe-published.php:63 
+#: includes/Delicious_Recipes_Pro_Admin.php:202 
+#: assets/admin/global-hooks/defaultSettings.jsx:22 assets/build/global.js:1
+msgid "Your recipe submission has been published!"
+msgstr "Tarif gönderiminiz yayınlandı!"
+
+#. translators: placeholder here is the max file upload size
+#: includes/Delicious_Recipes_Pro_Admin.php:208 
+#: assets/admin/global-hooks/defaultSettings.jsx:27 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:70
+msgid "Recipe Details"
+msgstr "Tarif Detayları"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:213 
+#: assets/admin/global-hooks/defaultSettings.jsx:32 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:28
+msgid "Recipe Card Information"
+msgstr "Tarif Kartı Bilgileri"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:218 
+#: assets/admin/global-hooks/defaultSettings.jsx:37 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:15
+msgid "Ingredients"
+msgstr "Malzemeler"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:223 assets/build/usrdashboard.js:3
+msgid "Instruction"
+msgstr "Talimat"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:228 
+#: assets/admin/global-hooks/defaultSettings.jsx:47 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3
+msgid "Gallery"
+msgstr "Galeri"
+
+#. translators: placeholder here is the max file upload size
+#: includes/Delicious_Recipes_Pro_Admin.php:233 
+#: assets/admin/global-hooks/defaultSettings.jsx:52 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:213 
+#: assets/public/recipe-submission/RecipeNutritionFacts.jsx:12
+msgid "Nutrition Facts"
+msgstr "Beslenme Gerçekleri"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:238 
+#: assets/admin/global-hooks/defaultSettings.jsx:57 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3 assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:125 
+#: assets/public/recipe-submission/RecipeNotes.jsx:10
+msgid "Notes"
+msgstr "Notlar"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:248 
+#: templates/recipe/floating-bar.php:36 
+#: assets/admin/global-hooks/defaultSettings.jsx:64 assets/build/global.js:1
+msgid "Start Reading Mode"
+msgstr "Okuma Modunu Başlat"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:256 
+#: templates/recipe/floating-bar.php:39 
+#: assets/admin/global-hooks/defaultSettings.jsx:70 assets/build/global.js:1
+msgid "Start Timer"
+msgstr "Zamanlayıcıyı Başlat"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:264 
+#: templates/recipe/floating-bar.php:42 
+#: assets/admin/global-hooks/defaultSettings.jsx:76 assets/build/global.js:1
+msgid "Share"
+msgstr "Paylaş"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:303
+msgctxt "post type general name"
+msgid "Equipments"
+msgstr "Ekipmanlar"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:304
+msgctxt "post type singular name"
+msgid "Equipment"
+msgstr "Ekipman"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:305
+msgctxt "admin menu"
+msgid "Equipments"
+msgstr "Ekipmanlar"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:306
+msgctxt "add new on admin bar"
+msgid "Equipment"
+msgstr "Ekipman"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:307
+msgctxt "Equipment"
+msgid "Add New"
+msgstr "Yeni ekle"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:308
+msgid "Add New Equipment"
+msgstr "Yeni Ekipman Ekle"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:309
+msgid "New Equipment"
+msgstr "Yeni ekipman"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:310
+msgid "Edit Equipment"
+msgstr "Ekipmanı Düzenle"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:311
+msgid "View Equipment"
+msgstr "Ekipmanı Görüntüle"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:312 
+#: templates/recipe/equipments.php:19 
+#: assets/admin/recipe-hooks/recipeNavigationHooks.jsx:12 
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:73 assets/build/recipe.js:1
+msgid "Equipments"
+msgstr "Ekipmanlar"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:313
+msgid "Search Equipments"
+msgstr " Ekipmanları Ara"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:314
+msgid "Parent Equipments:"
+msgstr "Ebeveyn Ekipmanları:"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:315
+msgid "No Equipments found."
+msgstr "Ekipman bulunamadı."
+
+#: includes/Delicious_Recipes_Pro_Admin.php:316
+msgid "No Equipments found in Trash."
+msgstr "Çöp Kutusunda Ekipman bulunamadı."
+
+#: includes/Delicious_Recipes_Pro_Admin.php:321
+msgid "Description."
+msgstr "Açıklama."
+
+#: includes/Delicious_Recipes_Pro_Admin.php:357 
+#: assets/admin/equipment/equiupmentEditHeader.jsx:19 
+#: assets/admin/global-tabs/recipeAdditional.jsx:171 
+#: assets/build/equipment.js:1 assets/build/global.js:1
+msgid "Equipment Settings"
+msgstr "Ekipman Ayarları"
+
+#: includes/Delicious_Recipes_Pro_Admin.php:383 
+#: templates/equipments-grid.php:39
+msgid "Featured"
+msgstr "Öne çıkan"
+
+#: includes/Delicious_Recipes_Pro_Public.php:142
+msgid "Click here or Drop new images to upload your recipe review pictures"
+msgstr ""
+"Tarif inceleme resimlerinizi yüklemek için buraya tıklayın veya yeni "
+"resimler bırakın"
+
+#: includes/Delicious_Recipes_Pro_Public.php:185 
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:28 
+#: assets/public/recipe-submission/index.js:267 
+#: assets/public/recipe-submission/index.js:288
+msgid "Submit Recipe"
+msgstr "Tarif Gönder"
+
+#: includes/Delicious_Recipes_Pro_Public.php:192 
+#: assets/build/usrdashboard.js:5 assets/public/my-recipes/index.js:84
+msgid "My Recipes"
+msgstr "Tariflerim"
+
+#: includes/functions/AjaxFunctions.php:106 
+#: includes/functions/AjaxFunctions.php:165
+msgid "File size too large."
+msgstr "Dosya boyutu çok büyük."
+
+#: includes/functions/AjaxFunctions.php:110 
+#: includes/functions/AjaxFunctions.php:169
+msgid "Unsupported file type uploaded."
+msgstr "Desteklenmeyen dosya türü yüklendi."
+
+#: includes/functions/AjaxFunctions.php:124 
+#: includes/functions/AjaxFunctions.php:188
+msgid "Invalid request. Nonce verification failed."
+msgstr "Geçersiz istek. Nonce doğrulama başarısız oldu."
+
+#. translators: %s template
+#: includes/functions/HelperFunctions.php:96
+msgid "%s does not exist."
+msgstr "%s mevcut değil."
+
+#: includes/functions/HelperFunctions.php:113
+msgid ""
+"action_args should not be overwritten when calling "
+"delicious_recipes_pro_get_template."
+msgstr ""
+"delicious_recipes_pro_get_template çağrılırken action_args ın üzerine "
+"yazılmamalıdır."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:101
+msgid ""
+"Activate Plugin License ( Delicious Recipes Pro ) to enjoy the full benefits "
+"of using the plugin. An active plugin comes with effortless updates whenever "
+"new features are released, top notch and guaranteed latest plugin support."
+msgstr ""
+"Eklentiyi kullanmanın tüm avantajlarından yararlanmak için Eklenti Lisansını "
+"(Lezzetli Tarifler Pro) etkinleştirin. Aktif bir eklenti, yeni özellikler "
+"yayınlandığında zahmetsiz güncellemeler, birinci sınıf ve garantili en son "
+"eklenti desteği ile birlikte gelir."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:104
+msgid "Please Activate Plugin License!"
+msgstr "Lütfen Eklenti Lisansını Etkinleştirin!"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:104
+msgid "Click here to enter your license key"
+msgstr "Lisans anahtarınızı girmek için burayı tıklayın"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:104
+msgid "if there is an error, please contact us at "
+msgstr "bir hata varsa, lütfen adresinden bizimle iletişime geçin."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:104
+msgid "How to activate the plugin license"
+msgstr "Eklenti lisansı nasıl etkinleştirilir"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:238 
+#: includes/updater/class-delicious-recipes-pro-updater.php:301 
+#: includes/updater/class-delicious-recipes-pro-updater.php:351
+msgid "An error occurred, please try again."
+msgstr "Bir hata oluştu. Lütfen tekrar deneyin."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:322
+msgid ""
+"Your license for %1$s extension expired on %2$s. To ensure you get features "
+"and security updates, having an active license is strongly recommended, and "
+"in some cases required."
+msgstr ""
+"%1$s uzantısı için lisansınızın süresi %2$s tarihinde sona erdi. Özellikleri "
+"ve güvenlik güncellemelerini aldığınızdan emin olmak için aktif bir lisansa "
+"sahip olmanız şiddetle tavsiye edilir ve bazı durumlarda gereklidir."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:330
+msgid "Your license key has been disabled."
+msgstr "Lisans anahtarınız devre dışı bırakıldı."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:334
+msgid ""
+"Invalid license key supplied. Please check if you have entered correct "
+"license key."
+msgstr ""
+"Geçersiz lisans anahtarı sağlandı. Lütfen doğru lisans anahtarını girip "
+"girmediğinizi kontrol edin."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:339
+msgid "Your license is not active for this URL."
+msgstr "Lisansınız bu URL için etkin değil."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:343
+msgid "This appears to be an invalid license key for %s."
+msgstr "Bu, %s için geçersiz bir lisans anahtarı gibi görünüyor."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:347
+msgid "Your license key has reached its activation limit."
+msgstr "Lisans anahtarınız etkinleştirme sınırına ulaştı."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:407
+msgid "Getting Started"
+msgstr "Başla"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:408
+msgid "Enter your theme license key."
+msgstr "Tema lisans anahtarınızı girin."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:409
+msgid "License Key"
+msgstr "Lisans anahtarı"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:410
+msgid "License Action"
+msgstr "Lisans İşlemi"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:411
+msgid "Deactivate License"
+msgstr "Lisansı Devre Dışı Bırak"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:412
+msgid "Activate License"
+msgstr "Lisansı Etkinleştir"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:413 
+#: includes/updater/class-delicious-recipes-pro-updater.php:426
+msgid "License status is unknown."
+msgstr "Lisans durumu bilinmiyor."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:414
+msgid "Renew?"
+msgstr "Yenile?"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:415
+msgid "unlimited"
+msgstr "sınırsız"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:416
+msgid "License key is active."
+msgstr "Lisans anahtarı aktif."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:417
+msgid "Expires %s."
+msgstr "%s süresi doluyor."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:418
+msgid "Lifetime License."
+msgstr "Ömür Boyu Lisans."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:419
+msgid "You have %1$s / %2$s sites activated."
+msgstr "Etkinleştirilmiş %1$s / %2$s siteniz var."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:420
+msgid "License key expired %s."
+msgstr "Lisans anahtarının süresi %s doldu."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:421
+msgid "License key has expired."
+msgstr "Lisans anahtarının süresi doldu."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:422
+msgid "License keys do not match."
+msgstr "Lisans anahtarları eşleşmiyor."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:423
+msgid "License is inactive."
+msgstr "Lisans etkin değil."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:424
+msgid "License key is disabled."
+msgstr "Lisans anahtarı devre dışı."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:425
+msgid "Site is inactive."
+msgstr "Site aktif değil."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:427
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+"Bu temayı güncellemek, yaptığınız tüm özelleştirmeleri kaybeder. Durdurmak "
+"için 'İptal', güncellemek için 'Tamam'."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:428
+msgid ""
+"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
+"title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
+"now</a>."
+msgstr ""
+"<strong>%1$s %2$s</strong> mevcut. <a href=\"%3$s\" class=\"thickbox\" "
+"title=\"%4$s\">Yeniliklere göz atın</a> veya <a href=\"%5$s\"%6$s>şimdi "
+"güncelleyin </a>."
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:562
+msgid "Plugin License"
+msgstr "Eklenti Lisansı"
+
+#: includes/updater/class-delicious-recipes-pro-updater.php:563
+msgid "License Activation"
+msgstr "Lisans Aktivasyonu"
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:250
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+"%1$s uygulamasının yeni bir sürümü mevcut. %2$sSürüm %3$s ayrıntılarını "
+"görüntüle%4$s."
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:258
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+"%1$s uygulamasının yeni bir sürümü mevcut. %2$sSürüm %3$s ayrıntılarını "
+"görüntüle%4$s veya %5$sürümü şimdi güncelle%6$s."
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:502
+msgid "You do not have permission to install plugin updates"
+msgstr "Eklenti güncellemelerini yükleme izniniz yok"
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:502
+msgid "Error"
+msgstr "Hata"
+
+#: includes/updater/license-page.php:14
+msgid "Your license key for %1$s is activated on this site."
+msgstr "%1$s için lisans anahtarınız bu sitede etkinleştirildi."
+
+#: includes/updater/license-page.php:17
+msgid ""
+"Your license key for %1$s is not activated on this site yet. Please activate."
+msgstr ""
+"%1$s için lisans anahtarınız henüz bu sitede etkinleştirilmedi. Lütfen "
+"etkinleştirin."
+
+#: includes/updater/license-page.php:26
+msgid "Delicious Recipes Pro License Key"
+msgstr "Delicious Recipes Pro Lisans Anahtarı"
+
+#: includes/updater/license-page.php:30
+msgid "Activate License Key"
+msgstr "Lisans Anahtarını Etkinleştir"
+
+#: includes/updater/license-page.php:32
+msgid ""
+"To enable automatic updates for Delicious Recipes Pro, please activate your "
+"license key. If you don't have a License, you can purchase it from %shere%s."
+"%s%s If you have already purchased it, you can find your license key on "
+"%syour dashboard%s. If you face any issue activating the license key, please "
+"reach out to our %ssupport team.%s"
+msgstr ""
+"Lezzetli Tarifler Pro için otomatik güncellemeleri etkinleştirmek için "
+"lütfen lisans anahtarınızı etkinleştirin. Lisansınız yoksa %sburadan%s%s "
+"satın alabilirsiniz. Zaten satın aldıysanız, lisans anahtarınızı "
+"%spanonuzda%s bulabilirsiniz. Lisans anahtarını etkinleştirirken herhangi "
+"bir sorunla karşılaşırsanız, lütfen %sdestek ekibimizle iletişime geçin.%s"
+
+#: includes/updater/license-page.php:39
+msgid "Enter your license key"
+msgstr "Lisans kodunuzu girin"
+
+#: includes/updater/license-page.php:43
+msgid "Deactivate"
+msgstr "Devre dışı bırak"
+
+#: includes/updater/license-page.php:45
+msgid "Activate"
+msgstr "etkinleştir"
+
+#: includes/updater/license-page.php:47
+msgid "Save"
+msgstr "Kaydet"
+
+#: templates/emails/admin-new-recipe-submission.php:19
+msgid "Dear Admin,"
+msgstr "Sevgili Yönetici,"
+
+#. translators: %s: Username
+#: templates/emails/admin-new-recipe-submission.php:21
+msgid "You’ve received the following recipe submission from %s."
+msgstr "%s'den aşağıdaki tarif gönderimini aldınız."
+
+#: templates/emails/admin-new-recipe-submission.php:22
+msgid "The submitted recipe detail is as follow:"
+msgstr "Gönderilen tarif detayı aşağıdaki gibidir:"
+
+#: templates/emails/admin-new-recipe-submission.php:23 
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:287
+msgid "Edit Recipe"
+msgstr "Tarifi Düzenle"
+
+#. translators: %s: Site Title
+#. translators: %s: average rating
+#: templates/emails/admin-new-recipe-submission.php:25 
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:72 
+#: assets/build/analytics.js:3
+msgid "%s"
+msgstr "%s"
+
+#. translators: %s: Customer username
+#: templates/emails/new-recipe-submission.php:20 
+#: templates/emails/recipe-published.php:20
+msgid "Hi %s,"
+msgstr "Selam %s"
+
+#: templates/emails/new-recipe-submission.php:21
+msgid "Thanks for submitting your recipe."
+msgstr "Tarifinizi gönderdiğiniz için teşekkürler."
+
+#: templates/emails/new-recipe-submission.php:22
+msgid "Your Submitted Recipe Detail is as follow:"
+msgstr "Gönderdiğiniz Tarif Detayı aşağıdaki gibidir:"
+
+#: templates/emails/new-recipe-submission.php:23 
+#: templates/emails/recipe-published.php:23
+msgid "Your Recipe"
+msgstr "Tarifiniz"
+
+#: templates/emails/new-recipe-submission.php:24 
+#: templates/emails/recipe-published.php:24
+msgid ""
+"If you have any questions, just reply to this email- we're always happy to "
+"help out."
+msgstr ""
+"Herhangi bir sorunuz varsa, bu e-postayı yanıtlamanız yeterlidir; size "
+"yardımcı olmaktan her zaman memnuniyet duyarız."
+
+#. translators: %s: Site Title
+#: templates/emails/new-recipe-submission.php:26 
+#: templates/emails/recipe-published.php:26
+msgid "Thank you, %s Team"
+msgstr "Teşekkürler, %s Ekibi"
+
+#: templates/emails/recipe-published.php:21
+msgid "We’re happy to inform you that your recipe has been published."
+msgstr "Tarifinizin yayınlandığını size bildirmekten mutluluk duyuyoruz."
+
+#: templates/emails/recipe-published.php:22
+msgid "Your Published Recipe detail is as follow:"
+msgstr "Yayınlanmış Tarif detayınız aşağıdaki gibidir:"
+
+#: templates/equipments-grid.php:26 templates/recipe/equipments.php:39 
+#: assets/admin/equipment/equipmentSettings.jsx:11 assets/build/equipment.js:1
+msgid "Buy Now"
+msgstr "Şimdi Al"
+
+#: templates/recipe/floating-bar.php:26
+msgid "Added to Favorites"
+msgstr "Favorilere Eklendi"
+
+#: templates/recipe/floating-bar.php:158
+msgid "Min"
+msgstr "Minimum"
+
+#: templates/recipe/floating-bar.php:166
+msgid "Pause"
+msgstr "Duraklat"
+
+#: templates/recipe/floating-bar.php:169
+msgid "Resume"
+msgstr "Devam et"
+
+#: templates/recipe/floating-bar.php:172
+msgid "Stop"
+msgstr "Dur"
+
+#: templates/recipe/floating-bar.php:254
+msgid "Share it on your social network"
+msgstr "Sosyal ağınızda paylaşın"
+
+#: templates/recipe/floating-bar.php:274
+msgid "Copy Link"
+msgstr "Bağlantıyı kopyala"
+
+#. translators: %s is recipe title
+#: templates/recipe/review/question-form.php:14
+msgid "Add a question"
+msgstr "Soru ekle"
+
+#. translators: %s is recipe title
+#: templates/recipe/review/question-form.php:16 
+#: templates/recipe/review/review-form.php:21
+msgid "Leave a Reply to %s"
+msgstr "%s için bir yanıt bırakın"
+
+#: templates/recipe/review/question-form.php:20
+msgid "Submit Your Question"
+msgstr "Sorunuzu Gönderin"
+
+#: templates/recipe/review/question-form.php:28 
+#: templates/recipe/review/review-form.php:33
+msgid "Your Name"
+msgstr "Adınız"
+
+#: templates/recipe/review/question-form.php:32 
+#: templates/recipe/review/review-form.php:37
+msgid "Name"
+msgstr "İsim"
+
+#: templates/recipe/review/question-form.php:35 
+#: templates/recipe/review/review-form.php:40
+msgid "Your Email"
+msgstr "E-posta adresiniz"
+
+#: templates/recipe/review/question-form.php:39 
+#: templates/recipe/review/review-form.php:44
+msgid "Email"
+msgstr "E-posta"
+
+#: templates/recipe/review/question-form.php:58
+msgid "Your Question"
+msgstr "Senin sorun"
+
+#: templates/recipe/review/question-form.php:58
+msgid "Write your question"
+msgstr "Sorunuzu yazın"
+
+#: templates/recipe/review/review-form.php:13
+msgid "Rate this recipe"
+msgstr "Bu tarifi değerlendirin"
+
+#. translators: %s is recipe title
+#: templates/recipe/review/review-form.php:19
+msgid "Add a review"
+msgstr "İnceleme ekle"
+
+#: templates/recipe/review/review-form.php:25
+msgid "Submit Your Review"
+msgstr "İncelemenizi gönderin"
+
+#: templates/recipe/review/review-form.php:72
+msgid "Upload Your Images"
+msgstr "Resimlerinizi Yükleyin"
+
+#: templates/recipe/review/review-form.php:79
+msgid "Your Reviews"
+msgstr "Yorumlarınız"
+
+#: templates/recipe/review/review-form.php:79
+msgid "Write your review"
+msgstr "Yorumunuzu yazın"
+
+#: templates/single-recipe-reviews.php:44
+msgid "User Reviews"
+msgstr "Kullanıcı İncelemeleri"
+
+#: templates/single-recipe-reviews.php:52
+msgid "out of 5"
+msgstr "5 üzerinden"
+
+#. translators: %1$s: average rating
+#: templates/single-recipe-reviews.php:57
+msgid "%1$s Customer Ratings"
+msgstr "%1$s Müşteri Puanları"
+
+#: templates/single-recipe-reviews.php:65
+msgid "5 Stars"
+msgstr "5 yıldız"
+
+#: templates/single-recipe-reviews.php:76
+msgid "4 Stars"
+msgstr "4 Yıldız"
+
+#: templates/single-recipe-reviews.php:87
+msgid "3 Stars"
+msgstr "3 Yıldız"
+
+#: templates/single-recipe-reviews.php:98
+msgid "2 Stars"
+msgstr "2 Yıldız"
+
+#: templates/single-recipe-reviews.php:109
+msgid "1 Star"
+msgstr "1 Yıldız"
+
+#: templates/single-recipe-reviews.php:141
+msgid "Write a Review"
+msgstr "Bir değerlendirme yazın"
+
+#: templates/single-recipe-reviews.php:153
+msgid "Ask a Question"
+msgstr "Bir soru sor"
+
+#: templates/single-recipe-reviews.php:173 
+#: assets/admin/recipe-reviews/recipeReviews.jsx:222 assets/build/reviews.js:1
+msgid "All"
+msgstr "Tüm"
+
+#: templates/single-recipe-reviews.php:177
+msgid "Q & A"
+msgstr "Soru-Cevap"
+
+#: templates/single-recipe-reviews.php:223
+msgid "Comments are closed."
+msgstr "Yoruma kapalı."
+
+#: assets/admin/editor.jsx:49 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:1
+msgid "Click to initialize RichEditor"
+msgstr "RichEditor'u başlatmak için tıklayın"
+
+#: assets/admin/equipment/equipmentSettings.jsx:91 assets/build/equipment.js:1
+msgid "Equipment settings updated successfully !!"
+msgstr "Ekipman ayarları başarıyla güncellendi !!"
+
+#: assets/admin/equipment/equipmentSettings.jsx:120 
+#: assets/admin/equipment/equipmentSettings.jsx:137 assets/build/equipment.js:1
+msgid ""
+"Equipment settings has been changed. Please save the changes from Equipment "
+"Settings section before updating the equipment."
+msgstr ""
+"Ekipman ayarları değiştirildi. Lütfen ekipmanı güncellemeden önce Ekipman "
+"Ayarları bölümündeki değişiklikleri kaydedin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:159 assets/build/equipment.js:1
+msgid "Button Label"
+msgstr "Düğme Etiketi"
+
+#: assets/admin/equipment/equipmentSettings.jsx:163 assets/build/equipment.js:1
+msgid "Enter button label."
+msgstr "Düğme etiketini girin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:169 assets/build/equipment.js:1
+msgid "Enter equipment button Label."
+msgstr "Ekipman düğmesi Etiketini girin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:177 assets/build/equipment.js:1
+msgid "Button Link"
+msgstr "Düğme Bağlantısı"
+
+#: assets/admin/equipment/equipmentSettings.jsx:181 assets/build/equipment.js:1
+msgid "Enter URL."
+msgstr "URL girin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:187 assets/build/equipment.js:1
+msgid "Enter equipment URL."
+msgstr "Ekipman URL'sini girin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:198 assets/build/equipment.js:1
+msgid "Add rel='nofollow' to link"
+msgstr "Bağlantıya rel='nofollow' ekleyin"
+
+#: assets/admin/equipment/equipmentSettings.jsx:210 assets/build/equipment.js:1
+msgid "Enable this option to Add rel='nofollow' to link."
+msgstr "Bağlantıya rel='nofollow' eklemek için bu seçeneği etkinleştirin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:221 assets/build/equipment.js:1
+msgid "Add rel='sponsored' to link"
+msgstr "Bağlantıya rel='sponsored' ekleyin"
+
+#: assets/admin/equipment/equipmentSettings.jsx:233 assets/build/equipment.js:1
+msgid "Enable this option to Add rel='sponsored' to link."
+msgstr "Bağlantıya rel='sponsored' eklemek için bu seçeneği etkinleştirin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:244 assets/build/equipment.js:1
+msgid "Open link in new window"
+msgstr "Bağlantıyı yeni pencerede aç"
+
+#: assets/admin/equipment/equipmentSettings.jsx:256 assets/build/equipment.js:1
+msgid "Enable this option to Open link in new window."
+msgstr "Bağlantıyı yeni pencerede açmak için bu seçeneği etkinleştirin."
+
+#: assets/admin/equipment/equipmentSettings.jsx:266 
+#: assets/build/equipment.js:1 assets/build/global.js:1
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: assets/admin/global-hooks/contentHooks.jsx:25 
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:8 
+#: assets/build/global.js:1
+msgid "New Recipe Submission"
+msgstr "Yeni Tarif Gönderimi"
+
+#: assets/admin/global-hooks/contentHooks.jsx:32 
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:8 
+#: assets/build/global.js:1
+msgid "Recipe Published"
+msgstr "Tarif Yayınlandı"
+
+#: assets/admin/global-hooks/defaultSettings.jsx:42 assets/build/global.js:1 
+#: assets/build/usrdashboard.js:3
+msgid "Instructions"
+msgstr "Talimatlar"
+
+#: assets/admin/global-hooks/navigationHooks.jsx:12 
+#: assets/admin/global-tabs/recipeSubmission.jsx:74 assets/build/global.js:1
+msgid "Recipe Submission"
+msgstr "Tarif Gönderimi"
+
+#: assets/admin/global-hooks/navigationHooks.jsx:36 
+#: assets/admin/global-tabs/recipeAdditional.jsx:39 assets/build/global.js:1
+msgid "Additional Features"
+msgstr "Ek özellikler"
+
+#: assets/admin/global-tabs/FieldRow.js:22 assets/build/global.js:1
+msgid "Section Name"
+msgstr "Bölüm adı"
+
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:11 
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:11 
+#: assets/build/global.js:1
+msgid "Subject"
+msgstr "Konu"
+
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:16 
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:16 
+#: assets/build/global.js:1
+msgid "Enter Subject here.."
+msgstr "Konuyu buraya girin.."
+
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:21 
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:21 
+#: assets/build/global.js:1
+msgid "Message"
+msgstr "Mesaj"
+
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:26 
+#: assets/build/global.js:1
+msgid "Enter new recipe submission email template here.."
+msgstr "Yeni tarif gönderme e-posta şablonunu buraya girin.."
+
+#: assets/admin/global-tabs/newRecipeSubmissionEmailTemplate.jsx:43 
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:43 
+#: assets/build/global.js:1
+msgid "Insert Email Placeholders"
+msgstr "E-posta Yer Tutucuları Ekle"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:9 assets/build/global.js:1
+msgid "List View"
+msgstr "Liste görünümü"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:10 assets/build/global.js:1
+msgid "Grid View"
+msgstr "Izgara Görünümü"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:46 assets/build/global.js:1
+msgid "Sticky Recipe Bar"
+msgstr "Yapışkan Tarif Çubuğu"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:56 assets/build/global.js:1
+msgid "Enable Floating Bar"
+msgstr "Kayan Çubuğu Etkinleştir"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:67 assets/build/global.js:1
+msgid ""
+"Enable this option to display recipe floating bar in recipe single page."
+msgstr ""
+"Tarif tek sayfasında tarif kayan çubuğunu görüntülemek için bu seçeneği "
+"etkinleştirin."
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:78 assets/build/global.js:1
+msgid "Enable/Disable"
+msgstr "Etkinleştir / Devre dışı"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:111 
+#: assets/admin/recipe-reviews/recipeReviews.jsx:357 assets/build/global.js:1 
+#: assets/build/reviews.js:1
+msgid "Edit"
+msgstr "Düzenle"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:115 assets/build/global.js:1
+msgid "Click on the pencil icon to edit the default text."
+msgstr "Varsayılan metni düzenlemek için kalem simgesine tıklayın."
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:133 assets/build/global.js:1
+msgid "Enter label"
+msgstr "Etiket girin"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:180 assets/build/global.js:1
+msgid "Enable Equipment"
+msgstr "Ekipmanı Etkinleştir"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:192 assets/build/global.js:1
+msgid "Enable this option to display the equipments in the recipe card."
+msgstr ""
+"Tarif kartındaki ekipmanları görüntülemek için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:200 assets/build/global.js:1
+msgid "Equipment Layout"
+msgstr "Ekipman Düzeni"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:213 assets/build/global.js:1
+msgid "Select the default layout for equipment listings."
+msgstr "Ekipman listeleri için varsayılan düzeni seçin."
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:222 assets/build/global.js:1
+msgid "Equipments per row"
+msgstr "Sıra başına ekipman"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:232 assets/build/global.js:1
+msgid "Enter the default number of equipments to display per row."
+msgstr "Satır başına görüntülenecek varsayılan ekipman sayısını girin."
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:242 assets/build/global.js:1
+msgid "Equipment Shortcode"
+msgstr "Ekipman Kısa Kodu"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:259 
+#: assets/admin/global-tabs/recipeSubmission.jsx:277 assets/build/global.js:1
+msgid "Copy Shortcode!"
+msgstr "Kısa Kodu Kopyala!"
+
+#: assets/admin/global-tabs/recipeAdditional.jsx:263 assets/build/global.js:1
+msgid ""
+"Use [dr_recipe_equipments num_posts=x] to display x equipments. By default, "
+"all equipments are shown."
+msgstr ""
+"x ekipmanı görüntülemek için [dr_recipe_equipments num_posts=x] kullanın. "
+"Varsayılan olarak, tüm ekipmanlar gösterilir."
+
+#: assets/admin/global-tabs/recipePublishedEmailTemplate.jsx:26 
+#: assets/build/global.js:1
+msgid "Enter recipe published email template here.."
+msgstr "Tarif yayınlanmış e-posta şablonunu buraya girin.."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:84 assets/build/global.js:1
+msgid "Enable Recipe Submission"
+msgstr "Tarif Göndermeyi Etkinleştir"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:96 assets/build/global.js:1
+msgid ""
+"Enable this option to allow users to submit recipe from the 'Recipe "
+"Dashboard' page."
+msgstr ""
+"Kullanıcıların 'Tarif Panosu' sayfasından tarif göndermesine izin vermek "
+"için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:101 assets/build/global.js:1
+msgid "Customize Recipe Fields"
+msgstr "Tarif Alanlarını Özelleştir"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:104 assets/build/global.js:1
+msgid "Customize the order and titles of the Recipe Submission fields."
+msgstr "Tarif Gönderme alanlarının sırasını ve başlıklarını özelleştirin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:112 assets/build/global.js:1
+msgid "Recipe Submission Guideline"
+msgstr "Tarif Gönderme Kılavuzu"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:118 assets/build/global.js:1
+msgid "Enter recipe submission guideline here.."
+msgstr "Tarif gönderme kılavuzunu buraya girin.."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:132 assets/build/global.js:1
+msgid ""
+"Enter the recipe submission guideline. This section will be displayed on the "
+"user recipe submission page."
+msgstr ""
+"Tarif gönderme kılavuzunu girin. Bu bölüm, kullanıcı tarifi gönderme "
+"sayfasında görüntülenecektir."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:140 assets/build/global.js:1
+msgid "Recipe Disclaimer"
+msgstr "Tarif Reddi"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:146 assets/build/global.js:1
+msgid "Enter recipe disclaimer here.."
+msgstr "Tarif sorumluluk reddini buraya girin.."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:160 assets/build/global.js:1
+msgid "Enter the recipe disclaimer."
+msgstr "Tarif Feragatnamesini Girin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:172 assets/build/global.js:1
+msgid "Enable Notification"
+msgstr "Bildirimleri etkinleştir"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:183 assets/build/global.js:1
+msgid "Enable this option to receive email notifications."
+msgstr "E-posta bildirimleri almak için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:193 assets/build/global.js:1
+msgid "Email Address"
+msgstr "E-Posta Adres"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:201 assets/build/global.js:1
+msgid ""
+"Enter multiple email recipients seperated by comma. Each email addresses "
+"added here will receive an email notification."
+msgstr ""
+"Virgülle ayırarak birden çok e-posta alıcısı girin. Buraya eklenen her e-"
+"posta adresi bir e-posta bildirimi alacaktır."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:214 assets/build/global.js:1
+msgid "Pending Mode"
+msgstr "Bekleme Modu"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:226 assets/build/global.js:1
+msgid "Enable this option to add users submitted recipes in pending mode."
+msgstr ""
+"Kullanıcıların gönderdiği tarifleri bekleme modunda eklemek için bu seçeneği "
+"etkinleştirin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:238 assets/build/global.js:1
+msgid "Guest Mode"
+msgstr "Misafir Modu"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:249 assets/build/global.js:1
+msgid "Enable this option to enable Guest Mode."
+msgstr "Misafir Modunu etkinleştirmek için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:260 assets/build/global.js:1
+msgid "Guest Mode Shortcode"
+msgstr "Misafir Modu Kısa Kodu"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:281 assets/build/global.js:1
+msgid ""
+"Use [dr_guest_recipe_submission] to display a Recipe Submission form on any "
+"post/page."
+msgstr ""
+"Herhangi bir gönderide/sayfada bir Tarif Gönderme formu görüntülemek için "
+"[dr_guest_recipe_submission] kullanın."
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:296 assets/build/global.js:1
+msgid "Allow User To Delete Recipe"
+msgstr "Kullanıcının Tarifi Silmesine İzin Ver"
+
+#: assets/admin/global-tabs/recipeSubmission.jsx:308 assets/build/global.js:1
+msgid "Enable this option to allow users to delete recipe."
+msgstr ""
+"Kullanıcıların tarifi silmesine izin vermek için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/reviewAdditional.jsx:13 assets/build/global.js:1
+msgid "Enable Review Images"
+msgstr "İnceleme Resimlerini Etkinleştir"
+
+#: assets/admin/global-tabs/reviewAdditional.jsx:25 assets/build/global.js:1
+msgid ""
+"Enable this option to allow users to upload recipe review images in the "
+"comments."
+msgstr ""
+"Kullanıcıların yorumlarda tarif inceleme resimleri yüklemesine izin vermek "
+"için bu seçeneği etkinleştirin."
+
+#: assets/admin/global-tabs/reviewAdditional.jsx:36 assets/build/global.js:1
+msgid "Enable Questions"
+msgstr "Soruları Etkinleştir"
+
+#: assets/admin/global-tabs/reviewAdditional.jsx:48 assets/build/global.js:1
+msgid "Enable this option to allow users to ask questions in the comments."
+msgstr ""
+"Kullanıcıların yorumlarda soru sormasına izin vermek için bu seçeneği "
+"etkinleştirin."
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:46 
+#: assets/build/analytics.js:1
+msgid "Hi,"
+msgstr "Selam,"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:48 
+#: assets/build/analytics.js:1
+msgid "Here's a summary of your website."
+msgstr "İşte web sitenizin bir özeti."
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:67 
+#: assets/build/analytics.js:1
+msgid "Total Recipes"
+msgstr "Toplam Tarifler"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:84 
+#: assets/build/analytics.js:1
+msgid "Total Likes"
+msgstr "Toplam Beğeni"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:99 
+#: assets/build/analytics.js:1
+msgid "Total Favorites"
+msgstr "Toplam Favoriler"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:114 
+#: assets/build/analytics.js:1
+msgid "Total Ratings"
+msgstr "Toplam Puanlar"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:129 
+#: assets/build/analytics.js:1
+msgid "Total Recipes Submission"
+msgstr "Toplam Tarif Gönderimi"
+
+#: assets/admin/recipe-analytics/analyticsSummary.jsx:148 
+#: assets/build/analytics.js:1
+msgid "Total Pending Recipes"
+msgstr "Toplam Bekleyen Tarifler"
+
+#: assets/admin/recipe-analytics/popularRecipes.jsx:40 
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:39 
+#: assets/admin/recipe-analytics/topFavoriteRecipes.jsx:40 
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:40 
+#: assets/build/analytics.js:1 assets/build/analytics.js:5
+msgid "S.N."
+msgstr "S.N."
+
+#: assets/admin/recipe-analytics/popularRecipes.jsx:41 
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:40 
+#: assets/admin/recipe-analytics/topFavoriteRecipes.jsx:41 
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:41 
+#: assets/build/analytics.js:1 assets/build/analytics.js:5 
+#: assets/build/usrdashboard.js:3 assets/build/usrdashboard.js:5 
+#: assets/public/my-recipes/index.js:92 
+#: assets/public/recipe-submission/RecipeDetails.jsx:72
+msgid "Recipe Title"
+msgstr "Tarif Başlığı"
+
+#: assets/admin/recipe-analytics/popularRecipes.jsx:42 
+#: assets/build/analytics.js:1
+msgid "No Of Views"
+msgstr "Görüntüleme Sayısı"
+
+#: assets/admin/recipe-analytics/popularRecipes.jsx:62 
+#: assets/build/analytics.js:1
+msgid " Views"
+msgstr " Görüntüle"
+
+#. translators: %s: total rating count
+#: assets/admin/recipe-analytics/popularRecipes.jsx:81 
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:82 
+#: assets/admin/recipe-analytics/topFavoriteRecipes.jsx:87 
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:100 
+#: assets/build/analytics.js:1 assets/build/analytics.js:5
+msgid "No Recipes Found."
+msgstr "Tarif Bulunamadı."
+
+#: assets/admin/recipe-analytics/popularRecipes.jsx:93 
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:94 
+#: assets/admin/recipe-analytics/topFavoriteRecipes.jsx:99 
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:112 
+#: assets/build/analytics.js:1 assets/build/analytics.js:5
+msgid "Load More"
+msgstr "Daha fazla yükle"
+
+#: assets/admin/recipe-analytics/recipeAnalytics.jsx:57 
+#: assets/build/analytics.js:5
+msgid "Popular Recipes"
+msgstr "Popüler Tarifler"
+
+#: assets/admin/recipe-analytics/recipeAnalytics.jsx:64 
+#: assets/build/analytics.js:5
+msgid "Top Rated Recipes"
+msgstr "En Çok Oy Alan Tarifler"
+
+#: assets/admin/recipe-analytics/recipeAnalytics.jsx:71 
+#: assets/build/analytics.js:5
+msgid "Most Favorite Recipes"
+msgstr "En Favori Tarifler"
+
+#: assets/admin/recipe-analytics/recipeAnalytics.jsx:78 
+#: assets/build/analytics.js:5
+msgid "Submitted Recipes"
+msgstr "Gönderilen Tarifler"
+
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:41 
+#: assets/build/analytics.js:1 assets/build/usrdashboard.js:5 
+#: assets/public/my-recipes/index.js:93
+msgid "Status"
+msgstr "Durum"
+
+#: assets/admin/recipe-analytics/submittedRecipes.jsx:62 
+#: assets/build/analytics.js:1 assets/build/usrdashboard.js:5 
+#: assets/public/my-recipes/index.js:111
+msgid "Published"
+msgstr "Yayınlanan"
+
+#: assets/admin/recipe-analytics/topFavoriteRecipes.jsx:42 
+#: assets/build/analytics.js:5
+msgid "No. Of Favorites"
+msgstr "No. Of Favorites"
+
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:42 
+#: assets/build/analytics.js:1
+msgid "Average Rating (No. Of Ratings)"
+msgstr "Ortalama İnceleme (İnceleme Sayısı)"
+
+#. translators: %s: total rating count
+#: assets/admin/recipe-analytics/topRatedRecipes.jsx:75 
+#: assets/build/analytics.js:5
+msgid " (%s rating)"
+msgid_plural " (%s ratings)"
+msgstr[0] " (%s inceleme)"
+msgstr[1] " (%s incelemeler)"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:230 assets/build/reviews.js:1
+msgid "Mine"
+msgstr "Mine"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:238 assets/build/reviews.js:1
+msgid "Pending"
+msgstr "Beklemede"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:246 assets/build/reviews.js:1
+msgid "Approved"
+msgstr "Onaylandı"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:254 
+#: assets/admin/recipe-reviews/recipeReviews.jsx:378 assets/build/reviews.js:1
+msgid "Spam"
+msgstr "İstenmeyen "
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:262 
+#: assets/admin/recipe-reviews/recipeReviews.jsx:389 assets/build/reviews.js:1
+msgid "Trash"
+msgstr "Çöp"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:270 assets/build/reviews.js:1
+msgid "Filter by comment type"
+msgstr "Yorum türüne göre filtrele"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:274 assets/build/reviews.js:1
+msgid "All comment types"
+msgstr "Tüm yorum türleri"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:276 assets/build/reviews.js:1
+msgid "Questions"
+msgstr "Sorular"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:284 assets/build/reviews.js:1
+msgid "Select All"
+msgstr "Hepsini seç"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:288 assets/build/reviews.js:1
+msgid "Author"
+msgstr "Yazar"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:291 assets/build/reviews.js:1
+msgid "Comment"
+msgstr "Yorum Yap"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:294 assets/build/reviews.js:1
+msgid "In response to"
+msgstr "Cevap olarak"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:297 assets/build/reviews.js:1
+msgid "Submitted on"
+msgstr "Gönderildi"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:307 assets/build/reviews.js:1
+msgid "Select comment"
+msgstr "Yorum seç"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:338 assets/build/reviews.js:1
+msgid "Unapprove"
+msgstr "onaylama"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:347 assets/build/reviews.js:1
+msgid "Approve"
+msgstr "Onayla"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:368 assets/build/reviews.js:1
+msgid "Not Spam"
+msgstr "Spam değil"
+
+#: assets/admin/recipe-reviews/recipeReviews.jsx:401 assets/build/reviews.js:1
+msgid "View Recipe"
+msgstr "Tarifi Görüntüle"
+
+#: assets/admin/recipe-tabs/noteAdditional.jsx:10 assets/build/recipe.js:1
+msgid "User Submission Notes"
+msgstr "Kullanıcı Gönderim Notları"
+
+#: assets/admin/recipe-tabs/noteAdditional.jsx:23 assets/build/recipe.js:1
+msgid "The notes send by User on submission for the admin."
+msgstr "Kullanıcı tarafından yönetici için gönderilirken gönderilen notlar."
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:45 assets/build/recipe.js:1
+msgid "No equipment selected."
+msgstr "Hiçbir ekipman seçilmedi."
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:79 assets/build/global.js:1 
+#: assets/build/recipe.js:1
+msgid "Section Title"
+msgstr "Bölüm başlığı"
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:84 assets/build/recipe.js:1
+msgid "Enter equipments section title"
+msgstr "Ekipman bölümü başlığını girin"
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:89 assets/build/recipe.js:1
+msgid "Enter title for the Equipment section."
+msgstr "Ekipman bölümü için başlık girin."
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:95 assets/build/recipe.js:1
+msgid "Select Equipments"
+msgstr "Ekipman Seçin"
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:100 assets/build/recipe.js:1
+msgid "Select a equipment.."
+msgstr "Bir ekipman seçin.."
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:118 assets/build/recipe.js:1
+msgid "Add Equipment"
+msgstr "Ekipman Ekle"
+
+#: assets/admin/recipe-tabs/recipeEquipments.jsx:123 assets/build/recipe.js:1
+msgid "Select a equipment."
+msgstr "Bir ekipman seçin."
+
+#: assets/build/global.js:1
+msgid "Recipes Information"
+msgstr "Tarifler Bilgi"
+
+#: assets/build/global.js:1
+msgid "Sort"
+msgstr "Çeşit"
+
+#: assets/build/global.js:1
+msgid "Enable"
+msgstr "Olanak ver"
+
+#: assets/build/usrdashboard.js:1 
+#: assets/public/recipe-submission/RecipeDetails.jsx:237
+msgid "Recipe Image"
+msgstr "Tarif Resmi"
+
+#: assets/build/usrdashboard.js:1 
+#: assets/public/recipe-submission/RecipeDetails.jsx:241
+msgid "Upload Your Image"
+msgstr "Resminizi Yükleyin"
+
+#: assets/build/usrdashboard.js:1 assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:247
+msgid "Upload"
+msgstr "Yükle"
+
+#: assets/build/usrdashboard.js:1 assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:249
+msgid "File type not accepted, sorry!"
+msgstr "Dosya türü kabul edilmedi, üzgünüm!"
+
+#: assets/build/usrdashboard.js:1 assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:250
+msgid "File is too large, sorry!"
+msgstr "Dosya çok büyük, üzgünüm!"
+
+#. translators: placeholder here is the max file upload size
+#: assets/build/usrdashboard.js:3 assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeDetails.jsx:258
+msgid "Max. file size %s | Supports: JPG, PNG"
+msgstr "Maks. dosya boyutu %s | Destekler: JPG, PNG"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:77
+msgid "Enter your recipe title."
+msgstr "Tarif başlığınızı girin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:90
+msgid "Description"
+msgstr "Açıklama"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:96
+msgid "Enter text for description"
+msgstr "Açıklama için metin girin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:113
+msgid "Cooking Method"
+msgstr "Pişirme Yöntemi"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:119
+msgid "Select a cooking method"
+msgstr "Bir pişirme yöntemi seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:130
+msgid "Cuisine"
+msgstr "Yerel mutfak"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:132
+msgid "Select a cuisine"
+msgstr "Bir mutfak seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:142
+msgid "Courses"
+msgstr "Kategoriler"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:144
+msgid "Select a course"
+msgstr "Bir kategori seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:154
+msgid "Recipe Keys"
+msgstr "Recipe Keys"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeDetails.jsx:156
+msgid "Select a recipe key"
+msgstr "Bir tarif anahtarı seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:8
+msgid "Beginner"
+msgstr "Acemi"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:9
+msgid "Intermediate"
+msgstr "Orta düzey"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:10
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:14
+msgid "Minutes"
+msgstr "Dakika"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:15
+msgid "Hours"
+msgstr "Saat"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:19
+msgid "Fall"
+msgstr "Fall"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:20
+msgid "Winter"
+msgstr "Kış"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:21
+msgid "Summer"
+msgstr "Yaz mevsimi"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:22
+msgid "Spring"
+msgstr "Bahar"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:23
+msgid "Suitable throughout the year"
+msgstr "Yıl boyunca uygun"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:31
+msgid "Recipe Subtitle"
+msgstr "Tarif Altyazısı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:36
+msgid "Enter text for recipe subtitle."
+msgstr "Tarif alt başlığı için metin girin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:43
+msgid "Recipe Description"
+msgstr "Tarif Açıklaması"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:49
+msgid "Enter text for recipe description"
+msgstr "Tarif açıklaması için metin girin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:66
+msgid "Recipe Keywords"
+msgstr "Tarif Anahtar Kelimeleri"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:71
+msgid ""
+"Enter comma separated recipe keywords. The keywords will be used in recipe "
+"card and for SEO Schema."
+msgstr ""
+"Virgülle ayrılmış tarif anahtar sözcükleri girin. Anahtar kelimeler tarif "
+"kartında ve SEO Şemasında kullanılacaktır."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:78
+msgid "Difficulty Level"
+msgstr "Zorluk seviyesi"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:82
+msgid "Select Difficulty Level"
+msgstr "Zorluk Seviyesini Seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:91
+msgid "Select the difficulty level for this recipe."
+msgstr "Bu tarif için zorluk seviyesini seçin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:99
+msgid "Preparation Time"
+msgstr "Hazırlanma zamanı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:124
+msgid ""
+"Enter the preperation time ( number ) for the recipe and choose desired unit."
+msgstr ""
+"Tarif için hazırlama süresini (sayı) girin ve istediğiniz birimi seçin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:132
+msgid "Cooking Time"
+msgstr "Pişirme Süresi"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:155
+msgid ""
+"Enter the cooking time ( number ) for the recipe and choose desired unit."
+msgstr "Tarif için pişirme süresini (sayı) girin ve istediğiniz birimi seçin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:163
+msgid "Rest Time"
+msgstr "Dinlenme Zamanı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:186
+msgid "Enter the rest time ( number ) for the recipe and choose desired unit."
+msgstr "Tarif için dinlenme süresini (sayı) girin ve istediğiniz birimi seçin."
+
+#: assets/build/usrdashboard.js:3 assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeInfo.jsx:194 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:17
+msgid "Calories"
+msgstr "Kalori"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:199
+msgid "Eg. 120 kcal"
+msgstr "Örneğin. 120 kcal"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:202
+msgid "Enter number of calories for this recipe."
+msgstr "Bu tarif için kalori sayısını girin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:209
+msgid "Best Season"
+msgstr "En İyi Sezon"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:213
+msgid "Select best season for the recipe"
+msgstr "Tarif için en iyi mevsimi seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeInfo.jsx:222
+msgid "Select the available seasons for the recipe."
+msgstr "Tarif için mevcut mevsimleri seçin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:236
+msgid "Grams"
+msgstr "Gram"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:237
+msgid "Kilograms"
+msgstr "Kilogram"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:238
+msgid "Milligrams"
+msgstr "Miligram"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:239
+msgid "Ounces"
+msgstr "Ounces"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:240
+msgid "Fluid ounces"
+msgstr "Fluid ounces"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:241
+msgid "Cups"
+msgstr "Bardaklar"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:242
+msgid "Teaspoons"
+msgstr "Çay kaşığı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:243
+msgid "Tablespoons"
+msgstr "Yemek kaşığı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:244
+msgid "Milliliters"
+msgstr "Mililitre"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:245
+msgid "Liters"
+msgstr "Litre"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:246
+msgid "Sticks"
+msgstr "Çubuklar"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:247
+msgid "Pounds"
+msgstr "pound"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:248
+msgid "Dashes"
+msgstr "Dashes"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:249
+msgid "Drops"
+msgstr "Damla"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:250
+msgid "Gallons"
+msgstr "Gallons"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:251
+msgid "Pinches"
+msgstr "Pinches"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:252
+msgid "Pints"
+msgstr "Pints"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:253
+msgid "Quarts"
+msgstr "çeyrek"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:254
+msgid "Drizzle"
+msgstr "Drizzle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:255
+msgid "Clove"
+msgstr "Karanfil"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:256
+msgid "Jar"
+msgstr "Jar"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:257
+msgid "Can"
+msgstr "Can"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:311
+msgid "Enter Quantity"
+msgstr "Miktar Girin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:322
+msgid "Select a Unit"
+msgstr "Birim Seçin"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:336
+msgid "Ingredient name"
+msgstr "Malzeme adı"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:345
+msgid "Ingredient notes"
+msgstr "Malzeme notları"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:354
+msgid "Sure to delete the ingredient?"
+msgstr "İçeriği silmek istediğinizden emin misiniz?"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:23
+msgid "Hide Ingredients"
+msgstr "Malzemeleri Gizle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:27
+msgid "No. of Servings"
+msgstr "No. of Servings"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:33
+msgid "Enter no. of servings value for this recipe."
+msgstr "Enter no. of servings value for this recipe."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:81
+msgid "Enter the title for recipe ingredients section."
+msgstr "Tarif malzemeleri bölümünün başlığını giriniz."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:93
+msgid "Sure to delete the ingredient section? This action cannot be reverted."
+msgstr ""
+"İçindekiler bölümünü silmek istediğinizden emin misiniz? Bu işlem geri "
+"alınamaz."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:116
+msgid "Quantity"
+msgstr "Miktar"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:119
+msgid "Unit"
+msgstr "Birim"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:122
+msgid "Ingredient"
+msgstr "Malzeme"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:191
+msgid "Add Ingredient"
+msgstr "Malzeme Ekle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeIngredients.jsx:220
+msgid "Add Ingredient Section"
+msgstr "İçerik Bölümü Ekle"
+
+#: assets/build/usrdashboard.js:3
+msgid "Instruction Title"
+msgstr "Talimat Başlığı"
+
+#: assets/build/usrdashboard.js:3
+msgid "Enter the title of the instruction."
+msgstr "Talimatın başlığını girin."
+
+#: assets/build/usrdashboard.js:3
+msgid "Add recipe instruction here."
+msgstr "Tarif talimatını buraya ekleyin."
+
+#: assets/build/usrdashboard.js:3
+msgid "Sure to delete the instruction? This action cannot be reverted."
+msgstr "Talimatı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+
+#: assets/build/usrdashboard.js:3
+msgid "Video URL (YouTube or Vimeo)"
+msgstr "Video URL'si (YouTube veya Vimeo)"
+
+#: assets/build/usrdashboard.js:3
+msgid "Enter YouTube or Vimeo video URL."
+msgstr "YouTube veya Vimeo video URL'sini girin."
+
+#: assets/build/usrdashboard.js:3
+msgid "Enter recipe instruction notes"
+msgstr "Tarif talimat notlarını girin"
+
+#: assets/build/usrdashboard.js:3
+msgid "Hide Instructions"
+msgstr "Talimatları Gizle"
+
+#: assets/build/usrdashboard.js:3
+msgid "Enter instructions section title here"
+msgstr "Talimatlar bölümü başlığını buraya girin"
+
+#: assets/build/usrdashboard.js:3
+msgid "Sure to delete the instruction section? This action cannot be reverted."
+msgstr ""
+"Talimat bölümünü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+
+#: assets/build/usrdashboard.js:3
+msgid "Add Instuction"
+msgstr "Talimat Ekle"
+
+#: assets/build/usrdashboard.js:3
+msgid "Add Instruction Section"
+msgstr "Talimat Bölümü Ekle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:85
+msgid "Add video"
+msgstr "Video ekle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:142
+msgid "Enter YouTube/Vimeo video URL."
+msgstr "YouTube/Vimeo video URL'sini girin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:64
+msgid "invalid URL supplied."
+msgstr "geçersiz URL sağlandı."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:57
+msgid "No URL supplied. Please enter valid YouTube or Vimeo URL."
+msgstr "URL sağlanmadı. Lütfen geçerli YouTube veya Vimeo URL'si girin."
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:157
+msgid "Add Video"
+msgstr "Video ekle"
+
+#: assets/build/usrdashboard.js:3 
+#: assets/public/recipe-submission/RecipeGalleryVideo.jsx:161
+msgid "Add YoutTube or Vimeo video URLS"
+msgstr "YouTube veya Vimeo video URL'leri ekleyin"
+
+#: assets/build/usrdashboard.js:3
+msgid "Hide Gallery"
+msgstr "Galeriyi Gizle"
+
+#: assets/build/usrdashboard.js:3
+msgid "Add Images"
+msgstr "Resimler ekle"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutritionFacts.jsx:35
+msgid "Amount Per Serving"
+msgstr "Porsiyon Başına Miktar"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutritionFacts.jsx:56
+msgid "% Daily Value *"
+msgstr "% Günlük değer *"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutritionFacts.jsx:166
+msgid ""
+"* Percent Daily Values are based on a 2,000 calorie diet. Your daily value "
+"may be higher or lower depending on your calorie needs."
+msgstr ""
+"* Yüzde Günlük Değerler, 2.000 kalorilik bir diyete dayanmaktadır. Günlük "
+"değeriniz kalori ihtiyacınıza göre daha yüksek veya daha düşük olabilir."
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:13
+msgid "Serving Size"
+msgstr "Hizmet boyutu"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:14
+msgid "Servings"
+msgstr "Porsiyon"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:18
+msgid "Calories from Fat"
+msgstr "Yağdan Alınan Kaloriler"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:22
+msgid "Total Fat"
+msgstr "Toplam yağ"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:28
+msgid "Saturated Fat"
+msgstr "Doymuş yağ"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:34
+msgid "Trans Fat"
+msgstr "Trans yağ"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:41
+msgid "Cholesterol"
+msgstr "Kolesterol"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:47
+msgid "Sodium"
+msgstr "Sodyum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:53
+msgid "Potassium"
+msgstr "Potasyum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:59
+msgid "Total Carbohydrate"
+msgstr "Toplam karbonhidrat"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:65
+msgid "Dietary Fiber"
+msgstr "Diyet lifi"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:71
+msgid "Sugars"
+msgstr "Şekerler"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:78
+msgid "Protein"
+msgstr "Protein"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:86
+msgid "Vitamin A"
+msgstr "A vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:91
+msgid "Vitamin C"
+msgstr "C vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:96
+msgid "Calcium"
+msgstr "Kalsiyum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:100
+msgid "Iron"
+msgstr "Demir"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:102
+msgid "Vitamin D"
+msgstr "D vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:107
+msgid "Vitamin E"
+msgstr "E vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:112
+msgid "Vitamin K"
+msgstr "K vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:117
+msgid "Thiamin"
+msgstr "Thiamin"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:122
+msgid "Riboflavin"
+msgstr "riboflavin"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:127
+msgid "Niacin"
+msgstr "Niasin"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:132
+msgid "Vitamin B6"
+msgstr "B6 vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:137
+msgid "Folate"
+msgstr "Folate"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:142
+msgid "Vitamin B12"
+msgstr "B12 vitamini"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:147
+msgid "Biotin"
+msgstr "biyotin"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:152
+msgid "Pantothenic Acid"
+msgstr "Pantotenik asit"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:157
+msgid "Phosphorus"
+msgstr "Fosfor"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:162
+msgid "Iodine"
+msgstr "İyot"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:167
+msgid "Magnesium"
+msgstr "Magnezyum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:171
+msgid "Zinc"
+msgstr "Çinko"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:173
+msgid "Selenium"
+msgstr "Selenyum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:178
+msgid "Copper"
+msgstr "Bakır"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:183
+msgid "Manganese"
+msgstr "Manganez"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:188
+msgid "Chromium"
+msgstr "Krom"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:193
+msgid "Molybdenum"
+msgstr "Molybdenum"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:198
+msgid "Chloride"
+msgstr "Klorür"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNutrition.jsx:221
+msgid "Hide Nutrition Facts"
+msgstr "Besin Değerlerini Gizle"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNotes.jsx:13
+msgid "Recipe Notes"
+msgstr "Tarif Notları"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNotes.jsx:19
+msgid ""
+"Enter the notes for the recipe. The text will be displayed below recipe card "
+"section."
+msgstr ""
+"Tarif için notları girin. Metin, tarif kartı bölümünün altında "
+"görüntülenecektir."
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNotes.jsx:36
+msgid "Note To Admin"
+msgstr "Yöneticiye Not"
+
+#: assets/build/usrdashboard.js:5 
+#: assets/public/recipe-submission/RecipeNotes.jsx:42
+msgid "Enter the notes for admin."
+msgstr "Yönetici için notları girin."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:31 
+#: assets/public/recipe-submission/index.js:223 
+#: assets/public/recipe-submission/index.js:269
+msgid "Save Recipe"
+msgstr "Tarifi Kaydet"
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:36
+msgid "Recipe title is a required field."
+msgstr "Tarif başlığı zorunlu bir alandır."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:162 
+#: assets/public/recipe-submission/index.js:221
+msgid "Update Recipe"
+msgstr "Tarifi Güncelle"
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:185
+msgid "Updating..."
+msgstr "Güncelleniyor..."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:188 
+#: assets/public/recipe-submission/index.js:227
+msgid "Saving..."
+msgstr "kaydediliyor..."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:208
+msgid "Recipe settings updated successfully !!"
+msgstr "Tarif ayarları başarıyla güncellendi !!"
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:229
+msgid "Submitting..."
+msgstr "Gönderiliyor..."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:253
+msgid ""
+"Recipe settings saved successfully!! It will be published after admin review."
+msgstr ""
+"Tarif ayarları başarıyla kaydedildi!! Admin incelemesinden sonra "
+"yayınlanacaktır."
+
+#: assets/build/usrdashboard.js:5 assets/public/recipe-submission/index.js:259
+msgid "Recipe settings saved successfully !! View your recipes at My Recipes."
+msgstr ""
+"Tarif ayarları başarıyla kaydedildi !! Tariflerinizi Tariflerim'de "
+"görüntüleyin."
+
+#: assets/build/usrdashboard.js:5 assets/public/my-recipes/index.js:76
+msgid "Back to My Recipes"
+msgstr "Tariflerime Geri Dön"
+
+#: assets/build/usrdashboard.js:5 assets/public/my-recipes/index.js:26
+msgid "Sure to delete the recipe? This action cannot be reverted."
+msgstr "Tarifi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+
+#: assets/build/usrdashboard.js:5 assets/public/my-recipes/index.js:216
+msgid ""
+"You have not submitted any recipes yet. You can add recipes through Submit "
+"Recipe."
+msgstr ""
+"Henüz herhangi bir tarif göndermediniz. Tarif Gönder ile tarif "
+"ekleyebilirsiniz."

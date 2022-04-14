@@ -1,0 +1,33 @@
+.dr-badge{
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.dr-recipe-wishlist + .dr-badge{
+	top: 45px;
+}
+.dr-badge a{
+	display: block;
+	padding: 8px;
+	font-size: 14px;
+	line-height: 1;
+	color: #fff !important;
+	border-radius: 20px 0 0 20px;
+	text-decoration: none !important;
+}
+
+.dr-react-select{
+	font-size: 14px;
+	max-width: 528px;
+	> [class*="-control"]{
+		border-radius: 0;
+		border-color: #e5e5e5;
+		> *:first-child{
+			padding: 0 16px;
+			> *{
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}

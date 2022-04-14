@@ -1,0 +1,98 @@
+/** For hiding video section notice */
+#sub-accordion-section-header_image .customize-section-description-container .customize-section-title .customize-control-notifications-container{
+    visibility: hidden;
+    height: 0;    
+}
+
+.customize-control-description ul li{
+	padding-left: 20px;
+	position: relative;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.customize-control-description ul li:after{
+    content: '';
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23111" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: linear 0.2s;
+}
+
+#sub-accordion-section-theme_info .customize-control-title{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+/* For inter linking in customizer control */
+.text-inner-link{
+    text-decoration: underline;
+     color: #0073aa;
+ }
+.text-inner-link:hover{
+     color: #00a0d2;
+     cursor: pointer;
+}
+
+.customize-control-cookery-lite-radio-image .image label {
+    margin-top: 10px;
+}
+
+.customize-control-cookery-lite-radio-image .image label img {
+    border: 2px solid rgba(0,0,0,0.15);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.customize-control-cookery-lite-radio-image .image input:checked + label img {
+    border-width: 2px;
+}
+
+.customize-control-cookery-lite-radio-image #input_page_sidebar_layout, 
+.customize-control-cookery-lite-radio-image #input_post_sidebar_layout, 
+.customize-control-cookery-lite-radio-image #input_layout_style {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.customize-control-cookery-lite-radio-image #input_page_sidebar_layout label, 
+.customize-control-cookery-lite-radio-image #input_post_sidebar_layout label, 
+.customize-control-cookery-lite-radio-image #input_layout_style label {
+    width: calc(50% - 15px);
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.control-section-cookery-lite-pro-section .accordion-section-title .button {
+    margin-top:  -4px;
+    font-weight: 700;
+    margin-left: 8px;
+    background: #f89300;
+    color: #fff;
+    border-color: #f89300;
+    padding: 0 20px 1px;
+}
+
+.control-section-cookery-lite-pro-section .accordion-section-title .button:hover,
+.control-section-cookery-lite-pro-section .accordion-section-title .button:focus{
+    background: #dc8200;
+    border-color: #dc8200;
+}
+
+.rtl .control-section-cookery-lite-pro-section .accordion-section-title .button {
+    margin-left:  0;
+    margin-right: 8px;
+}
+
+#sub-accordion-section-sidebar-widgets-client .customize-section-description{
+    display: none;
+}
