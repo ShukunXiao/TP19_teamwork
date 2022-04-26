@@ -5,7 +5,7 @@ Tags: recipe, food, cooking, recipes, chef, ingredients
 Requires at least: 5.1
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -188,6 +188,10 @@ Yes, you can provide us with your valuable feedback for the Delicious Recipes pl
 11. Recipes - Gallery
 
 == Changelog ==
+
+= 1.3.7 - 21st April 2022 =
+* Fixes - Videos not playing in lightGallery fix.
+* Fixes - Minor bug fixes.
 
 = 1.3.6 - 11th April 2022 =
 * New Feature - Recipe FAQs - Add FAQs for Recipe with FAQ schema support.

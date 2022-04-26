@@ -96,8 +96,8 @@ if ( ! empty( $recipe_instructions ) ) :
                     <?php
                     foreach( $videoGalleryVids as $key => $video ) :
                         if ( 'youtube' === $video['vidType'] ) {
-                            $vid_url    = 'http://www.youtube.com/embed/' . $video['vidID'];
-                            $image_url  = "http://i3.ytimg.com/vi/{$video['vidID']}/maxresdefault.jpg";
+                            $vid_url    = 'https://www.youtube.com/embed/' . $video['vidID'];
+                            $image_url  = "https://i3.ytimg.com/vi/{$video['vidID']}/maxresdefault.jpg";
                         } elseif( 'vimeo' === $video['vidType'] ) {
                             $vid_url    = 'https://player.vimeo.com/video/' . $video['vidID'];
                             $image_url  = $video['vidThumb'];

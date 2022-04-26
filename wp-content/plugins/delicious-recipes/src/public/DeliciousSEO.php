@@ -213,10 +213,10 @@ class Delicious_SEO {
             $video_obj = $recipe->video_gallery['0'];
 
             if ( 'youtube' === $video_obj['vidType'] ) {
-                $vid_url   = 'http://www.youtube.com/watch?v=' . $video_obj['vidID'];
-                $image_url = "http://i3.ytimg.com/vi/{$video_obj['vidID']}/maxresdefault.jpg";
+                $vid_url   = 'https://www.youtube.com/watch?v=' . $video_obj['vidID'];
+                $image_url = "https://i3.ytimg.com/vi/{$video_obj['vidID']}/maxresdefault.jpg";
             } elseif( 'vimeo' === $video_obj['vidType'] ) {
-                $vid_url   = 'http://vimeo.com/moogaloop.swf?clip_id=' . $video_obj['vidID'];
+                $vid_url   = 'https://vimeo.com/moogaloop.swf?clip_id=' . $video_obj['vidID'];
                 $image_url = $video_obj['vidThumb'];
             }
 

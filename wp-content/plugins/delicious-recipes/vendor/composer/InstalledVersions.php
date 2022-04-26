@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '0b5ef80aeb17bcb9262d361a986f0819b9c0ffd6',
+    'reference' => 'a533f3d88d5a7607a7c1aef664564b6e5a891f70',
     'name' => 'xqluz/delicious-recipes',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '0b5ef80aeb17bcb9262d361a986f0819b9c0ffd6',
+      'reference' => 'a533f3d88d5a7607a7c1aef664564b6e5a891f70',
     ),
   ),
 );

@@ -7,7 +7,7 @@
  * Author URI:      https://wpdelicious.com
  * Text Domain:     delicious-recipes
  * Domain Path:     /languages
- * Version:         1.3.6
+ * Version:         1.3.7
  * Requires at least: 5.1
  * Requires PHP: 5.6
  * 

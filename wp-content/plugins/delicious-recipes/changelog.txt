@@ -1,3 +1,7 @@
+1.3.7: 2022-04-21
+- Fixes: Videos not playing in lightGallery fix.
+- Fixes: Minor bug fixes.
+
 1.3.6: 2022-04-11
 - New Feature: Recipe FAQs: Add FAQs for Recipe with FAQ schema support.
 - New Feature: Recipe Badge: Assign a badge to a recipe with search compatibility.
