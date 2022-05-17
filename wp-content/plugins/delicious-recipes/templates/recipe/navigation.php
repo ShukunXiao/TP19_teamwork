@@ -3,19 +3,24 @@
  * Recipe navigation block.
  */
 
-// Get global toggles.
-$global_toggles = delicious_recipes_get_global_toggles_and_labels();
+// Get global settings.
+$global_settings = delicious_recipes_get_global_settings();
 
-if( ! $global_toggles['enable_navigation'] ) {
+$enable_navigation = isset( $global_settings['enableNavigation']['0'] ) && 'yes' === $global_settings['enableNavigation']['0'] ? true : false;
+$enable_autoload = isset( $global_settings['autoloadRecipes']['0'] ) && 'yes' === $global_settings['autoloadRecipes']['0'] ? true : false;
+
+if( ! $enable_navigation && ! $enable_autoload ) {
     return;
 }
+
+$nav_style = ! $enable_navigation ? 'display:none;' : 'display:block;';
 
 $prev_post = get_previous_post();
 $next_post = get_next_post();
 
 if( ! empty( $prev_post ) || ! empty( $next_post ) ) {
 ?>
-    <nav class="post-navigation pagination">
+    <nav class="post-navigation pagination" style="<?php echo esc_attr( $nav_style ); ?>">
         <div class="nav-links">
 <?php
     if( ! empty( $prev_post ) ) { ?>

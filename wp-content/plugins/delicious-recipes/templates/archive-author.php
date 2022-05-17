@@ -23,6 +23,7 @@ get_header();
 	$global_settings         = delicious_recipes_get_global_settings();
 	$author_profile          = isset( $global_settings['enableAuthorProfile']['0'] ) && 'yes' === $global_settings['enableAuthorProfile']['0'] ? true : false;
 	$showAuthorArchiveHeader = isset( $global_settings['showAuthorArchiveHeader']['0'] ) && 'yes' === $global_settings['showAuthorArchiveHeader']['0'] ? true : false;
+	$view_type               = delicious_recipes_get_archive_layout();
 
 	if ( $author_profile && $showAuthorArchiveHeader ) :
 		?>
@@ -42,9 +43,8 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="dr-archive-list-wrapper">
-				<div class="dr-archive-list-gridwrap">
+				<div class="dr-archive-list-gridwrap <?php echo esc_attr( $view_type ); ?>">
 					<?php 
-						$view_type = delicious_recipes_get_archive_layout();
 						if ( have_posts() ) {
 							while ( have_posts() ) {
 								the_post();

@@ -69,7 +69,7 @@ if ( ! function_exists( 'delicious_recipes_handpicked_recipes_block_render' ) ) 
 		echo '<div class="dr-recipes-handpicked-block">';
 
 		if ( $title ) {
-			printf( '<%1$s class="wte-tr-title">%2$s</%1$s>', $heading, $title );
+			printf( '<%1$s class="dr-entry-title">%2$s</%1$s>', $heading, $title );
 		}
 
 		if ( $recipes->have_posts() ) :

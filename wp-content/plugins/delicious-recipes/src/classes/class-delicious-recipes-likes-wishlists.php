@@ -70,14 +70,17 @@ class Delicious_Recipes_Likes_Wishlists {
      *
      * @return void
      */
-    public function recipe_like_button(){
-        global $recipe;
-        $like_count = $this->get_recipe_like_count( $recipe->ID );
+    public function recipe_like_button( $recipe_id = ''){
+        if( $recipe_id == '' ){
+            global $recipe;
+            $recipe_id = $recipe->ID;
+        }
+        $like_count = $this->get_recipe_like_count( $recipe_id );
 
         delicious_recipes_get_template( 'recipe/recipe-like.php', [
             'like_count' => $like_count,
-            'id'         => $recipe->ID,
-            'can_like'   => $this->can_like( $recipe->ID )
+            'id'         => $recipe_id,
+            'can_like'   => $this->can_like( $recipe_id )
         ] );
     }
 

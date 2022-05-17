@@ -29,11 +29,13 @@ $ingredientTitle = isset( $recipe->ingredient_title ) ? $recipe->ingredient_titl
 
                         $rand_key        = rand(10, 10000);
                         $ingredient_qty  = isset( $ingredient['quantity'] ) ? $ingredient['quantity'] : 0;
+                        $ingredient_qty  = is_numeric( $ingredient_qty ) ? round( $ingredient_qty, 2 ) : $ingredient_qty;
+
                         $ingredient_unit = isset( $ingredient['unit'] ) ? $ingredient['unit'] : '';
                         $unit_text       = ! empty( $ingredient_unit ) ? delicious_recipes_get_unit_text( $ingredient_unit, $ingredient_qty ) : '';
 
                         $ingredient_keys = array(
-                            '{qty}'        => isset( $ingredient['quantity'] ) ? '<span class="ingredient_quantity" data-original="'. $ingredient['quantity'] .'" data-recipe="'. $recipe->ID .'">' . $ingredient['quantity'] . '</span>' : '',
+                            '{qty}'        => isset( $ingredient['quantity'] ) ? '<span class="ingredient_quantity" data-original="'. $ingredient_qty .'" data-recipe="'. $recipe->ID .'">' . $ingredient_qty . '</span>' : '',
                             '{unit}'       => $unit_text,
                             '{ingredient}' => isset( $ingredient['ingredient'] ) ? $ingredient['ingredient'] : '',
                             '{notes}'      => isset( $ingredient['notes'] ) && ! empty( $ingredient['notes'] ) ? '<span class="ingredient-notes" >(' . $ingredient['notes'] . ')</span>' : '',

@@ -27,6 +27,7 @@ class Delicious_Recipes_Shortcodes {
 			'recipe_card'         => __CLASS__ . '::recipe_card',
 			'dr_surprise_me'      => __CLASS__ . '::surprise_me',
 			'dr_user_dashboard'   => __CLASS__ . '::user_dashboard',
+			'dr_recipe_archives'  => __CLASS__ . '::recipe_archives',
 		);
 
 		foreach ( $shortcodes as $shortcode => $function ) {
@@ -282,7 +283,7 @@ class Delicious_Recipes_Shortcodes {
 
 		wp_reset_postdata();
 
-		return '<div class="dr-archive-list-gridwrap featured">' . ob_get_clean() . '</div>';
+		return '<div class="dr-archive-list-gridwrap featured ' . $layout . '">' . ob_get_clean() . '</div>';
 	}
 
 	/**
@@ -342,7 +343,7 @@ class Delicious_Recipes_Shortcodes {
 
 		wp_reset_postdata();
 
-		return '<div class="dr-archive-list-gridwrap popular">' . ob_get_clean() . '</div>';
+		return '<div class="dr-archive-list-gridwrap popular ' . $layout . '">' . ob_get_clean() . '</div>';
 	}
 
 	/**
@@ -393,7 +394,7 @@ class Delicious_Recipes_Shortcodes {
 
 		wp_reset_postdata();
 
-		return '<div class="dr-archive-list-gridwrap recent">' . ob_get_clean() . '</div>';
+		return '<div class="dr-archive-list-gridwrap recent ' . $layout . '">' . ob_get_clean() . '</div>';
 	}
 
 	/**
@@ -505,6 +506,88 @@ class Delicious_Recipes_Shortcodes {
 		call_user_func( array( 'Delicious_Recipes_User_Account', 'output' ) );
 
 		return '<div class="delicious-recipes user-dashboard">' . ob_get_clean() . '</div>';
+	}
+
+	/**
+	 * Show recipe taxonomy archives.
+	 *
+	 * @param array $atts Attributes.
+	 * @return string
+	 */
+	public static function recipe_archives( $atts ) {
+
+		$atts = shortcode_atts( array(
+			'num_posts' => '9',
+			'layout'    => 'grid',
+			'taxonomy'  => '',
+			'terms'     => '',
+			'carousel'  => false,
+			), $atts, 'dr_recipe_archives' );
+
+		// If REST_REQUEST is defined (by WordPress) and is a TRUE, then it's a REST API request.
+		$is_rest_route = ( defined( 'REST_REQUEST' ) && REST_REQUEST );
+		if (
+			( is_admin() && ! $is_rest_route ) || // admin and AJAX (via admin-ajax.php) requests
+			( ! is_admin() && $is_rest_route )    // REST requests only
+		) {
+			return '';
+		}
+
+		$carousel = isset( $atts['carousel'] ) && ( 1 == $atts['carousel'] || true == $atts['carousel'] ) ? true : false;
+		$layout   = $carousel ? 'grid' : ( isset( $atts['layout'] ) && 'list' === $atts['layout'] ? 'list' : 'grid' );
+		$classes  = $carousel ? array( 'dr-post-carousel', 'owl-carousel' ) : array( 'dr-archive-list-gridwrap', $layout );
+		$classes  = implode( ' ', $classes );
+
+		$cat = get_theme_mod( 'exclude_categories' );
+        if( $cat ) $cat = array_diff( array_unique( $cat ), array('') );
+
+        $args = array(
+            'post_type'             => DELICIOUS_RECIPE_POST_TYPE,
+            'post_status'           => 'publish',
+            'posts_per_page'        => absint( $atts['num_posts'] ),
+            'ignore_sticky_posts'   => true,
+            'category__not_in'      => $cat
+        );
+
+		$taxonomy = isset( $atts['taxonomy'] ) && '' != $atts['taxonomy'] ? $atts['taxonomy'] : false;
+		$terms    = isset( $atts['terms'] ) && '' != $atts['terms'] ? $atts['terms'] : false;
+
+		if( $taxonomy && $terms ) {
+			$terms = explode( ',', $terms );
+			$terms = array_map( function( $term ) use ( $taxonomy ) {
+				$term = is_numeric( $term ) ? get_term_by( 'id', $term, $taxonomy ) : get_term_by( 'slug', $term, $taxonomy );
+				return $term ? $term->term_id : false;
+			}, $terms );
+
+			if( $terms ) { 
+				$args['tax_query'] = array(
+					array(
+						'taxonomy' => $taxonomy,
+						'terms'    => $terms,
+					),
+				);
+			} else {
+				$args['taxonomy'] =  $taxonomy;
+			}
+		} 
+		elseif( $taxonomy ) {
+			$args['taxonomy'] =  $taxonomy;
+		} 
+		
+		$recipes = new WP_Query( $args );
+
+		ob_start();
+
+		wp_enqueue_script( 'delicious-recipes-single' );
+
+		while ( $recipes->have_posts() ) {
+			$recipes->the_post();
+				delicious_recipes_get_template_part( 'recipes', $layout );
+		}
+
+		wp_reset_postdata();
+
+		return '<div class="'. $classes .'">' . ob_get_clean() . '</div>';
 	}
 
 }

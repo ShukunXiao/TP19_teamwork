@@ -342,7 +342,8 @@ function is_recipe_shortcode() {
 		|| delicious_recipes_post_content_has_shortcode( 'print_recipe' )
 		|| delicious_recipes_post_content_has_shortcode( 'recipe_card' )
 		|| delicious_recipes_post_content_has_shortcode( 'dr_surprise_me' )
-		|| delicious_recipes_post_content_has_shortcode( 'dr_user_dashboard' );
+		|| delicious_recipes_post_content_has_shortcode( 'dr_user_dashboard' )
+		|| delicious_recipes_post_content_has_shortcode( 'dr_recipe_archives' );
 }
 
 /**
@@ -609,6 +610,7 @@ function delicious_recipes_get_global_settings() {
 		'archiveDescription'    => "",
 		'taxPagesTermsBoxTitle' => __( 'Narrow Your Search', 'delicious-recipes' ),
 		'defaultArchiveLayout'  => "grid",
+		'archivePaginationStyle'=> "simple",
 
 		// Appearance fields
 		'enablePluginTypography' => [

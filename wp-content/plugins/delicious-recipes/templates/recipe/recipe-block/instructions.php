@@ -69,7 +69,7 @@ if ( ! empty( $recipe_instructions ) ) :
                                             <div class="dr-instructions-video dr-instruction-video-<?php echo esc_attr($recipe->ID); ?>">
                                                 <div class="dr-vdo-thumbnail">
                                                     <img src="<?php echo esc_url( $instruction_video_attr['fullsize'] ) ?>" alt="<?php echo esc_attr( 'Instruction video' ); ?>">
-                                                    <a class="dr-instruction-videopop" data-iframe="true" data-src="<?php echo esc_url( $instruction_video ); ?>">
+                                                    <a class="dr-instruction-videopop" data-iframe="true" data-src="<?php echo esc_url( $instruction_video_attr['url'] ); ?>">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18.095" height="20.894" viewBox="0 0 18.095 20.894"><path id="Path_26366" data-name="Path 26366" d="M107.992,76.108l18.095,10.447L107.992,97Z" transform="translate(-107.992 -76.108)" fill="#fff"/></svg>
                                                     </a>
                                                 </div>

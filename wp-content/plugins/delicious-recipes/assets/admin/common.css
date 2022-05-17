@@ -5244,7 +5244,7 @@ select[name="wprecipemaker-dr-importRecipe_length"] {
 	fill: var(--primary-color);
 }
 /* whats new screen */
-body.recipe_page_delicious_recipes_whats_new {
+body.delicious-recipes_page_delicious_recipes_whats_new {
 	background: var(--white-color);
 }
 #dr_whats_new_screen_page {

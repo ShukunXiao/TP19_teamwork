@@ -204,3 +204,18 @@ button.dr-switch-btn{
         height: 100%;
     }
 }
+
+.dr-archive-list-gridwrap{
+    &.list{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.dr-archive-details{
+    .dr-archive-list-title{
+        a{
+            text-decoration: none !important;
+        }
+    }
+}

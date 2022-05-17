@@ -414,9 +414,9 @@ function delicious_recipes_parse_videos($videoString = null)
 
                     if ($videoIdRegex !== NULL) {
                         if (preg_match($videoIdRegex, $link, $results)) {
-                            $video_str     = 'http://www.youtube.com/v/%s';
-                            $thumbnail_str = 'http://i3.ytimg.com/vi/%s/hqdefault.jpg';
-                            $fullsize_str  = 'http://i3.ytimg.com/vi/%s/maxresdefault.jpg';
+                            $video_str     = 'https://www.youtube.com/embed/%s';
+                            $thumbnail_str = 'https://i3.ytimg.com/vi/%s/hqdefault.jpg';
+                            $fullsize_str  = 'https://i3.ytimg.com/vi/%s/maxresdefault.jpg';
                             $video_id      = $results[1];
                             $vid_type      = 'youtube';
                         }
@@ -443,7 +443,7 @@ function delicious_recipes_parse_videos($videoString = null)
                             try {
                                 $hash = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$video_id.php"));
                                 if (!empty($hash) && is_array($hash)) {
-                                    $video_str     = 'http://vimeo.com/moogaloop.swf?clip_id=%s';
+                                    $video_str     = 'https://player.vimeo.com/video/%s';
                                     $thumbnail_str = $hash[0]['thumbnail_small'];
                                     $fullsize_str  = $hash[0]['thumbnail_large'];
                                     $vid_type      = 'vimeo';

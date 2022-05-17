@@ -5,7 +5,7 @@ export function LayoutTwo({ recipe, preventClick }) {
 	return (
 		<div
 			id="dr-recipe-meta-main"
-			className="dr-summary-holder dr-recipe-card-block"
+			className="dr-summary-holder dr-recipe-card-block layout-2"
 			style={{
 				background: `rgba(${delrcp.setting_options.primaryColorRGB}, 0.05)`,
 			}}

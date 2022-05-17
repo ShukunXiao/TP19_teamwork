@@ -50,7 +50,7 @@ class GlobalSettings {
 	private function init_hooks() {
 
 		// Add menu in settins page.
-		add_action( 'admin_menu', array( $this, 'add_submenu_page' ) );
+		add_action( 'admin_menu', array( $this, 'add_submenu_page' ), 20 );
 	}
 
 	/**
@@ -64,8 +64,8 @@ class GlobalSettings {
 	public function add_submenu_page() {
 
 		add_submenu_page( 
-			'edit.php?post_type=' . DELICIOUS_RECIPE_POST_TYPE, 
-			__( 'Delicious Recipes', 'delicious-recipes' ), 
+			'delicious-recipes', 
+			__( 'Settings', 'delicious-recipes' ), 
 			__( 'Settings', 'delicious-recipes' ), 
 			'manage_options', 
 			'delicious_recipes_global_settings', 
@@ -87,7 +87,7 @@ class GlobalSettings {
 		
 		global $pagenow;
 
-		if ( 'edit.php' === $pagenow ) {
+		if ( 'admin.php' === $pagenow ) {
 			?>
 				<div id="delicious-recipe-global" data-rest-nonce="<?php echo wp_create_nonce( 'wp_rest' ); ?>"></div>
 			<?php

@@ -23,7 +23,7 @@ class Delicious_Recipes_Import {
 	public function __construct() {
 		$this->load_importers();
 
-		add_action( 'admin_menu', array( $this, 'add_submenu_page' ) );
+		add_action( 'admin_menu', array( $this, 'add_submenu_page' ), 20 );
 
 		add_action( 'wp_ajax_dr_import_recipes', array( $this, 'ajax_import_recipes' ) );
 	}
@@ -36,7 +36,7 @@ class Delicious_Recipes_Import {
 	public function add_submenu_page() {
 
 		add_submenu_page( 
-			'edit.php?post_type=' . DELICIOUS_RECIPE_POST_TYPE, 
+			'delicious-recipes', 
 			__( 'Import Recipes', 'delicious-recipes' ), 
 			__( 'Import Recipes', 'delicious-recipes' ), 
 			'manage_options', 

@@ -25,26 +25,33 @@ if( is_post_type_archive( DELICIOUS_RECIPE_POST_TYPE ) ) {
 ?>
 <div class="dr-archive-pagination">
 	<?php
-		$pagination = get_the_posts_pagination( array(
-			'mid_size'           => 2,
-			'prev_text'          => __( 'Previous', 'delicious-recipes' ),
-			'next_text'          => __( 'Next', 'delicious-recipes' ),
-			'before_page_number' => '<span class="meta-nav screen-reader-text dr-meta-nav">' . __( 'Page', 'delicious-recipes' ) . ' </span>',
-		) );
+		// $pagination = get_the_posts_pagination( array(
+		// 	'mid_size'           => 2,
+		// 	'prev_text'          => __( 'Previous', 'delicious-recipes' ),
+		// 	'next_text'          => __( 'Next', 'delicious-recipes' ),
+		// 	'before_page_number' => '<span class="meta-nav screen-reader-text dr-meta-nav">' . __( 'Page', 'delicious-recipes' ) . ' </span>',
+		// ) );
 
-		$class_arrays = array(
-			'class="navigation pagination"' => 'class="dr-navigation pagination"',
-			'class="nav-links"'             => 'class="dr-nav-links"',
-			'class="page-numbers"'          => 'class="dr-page-numbers"',
-			'class="page-numbers current"'  => 'class="dr-page-numbers current"',
-			'class="prev page-numbers"'     => 'class="dr-page-numbers prev"',
-			'class="page-numbers next"'     => 'class="dr-page-numbers next"',
-			'class="next page-numbers"'     => 'class="dr-page-numbers next"',
-		);
+		// $class_arrays = array(
+		// 	'class="navigation pagination"' => 'class="dr-navigation pagination"',
+		// 	'class="nav-links"'             => 'class="dr-nav-links"',
+		// 	'class="page-numbers"'          => 'class="dr-page-numbers"',
+		// 	'class="page-numbers current"'  => 'class="dr-page-numbers current"',
+		// 	'class="prev page-numbers"'     => 'class="dr-page-numbers prev"',
+		// 	'class="page-numbers next"'     => 'class="dr-page-numbers next"',
+		// 	'class="next page-numbers"'     => 'class="dr-page-numbers next"',
+		// );
 
-		$pagination = str_replace( array_keys( $class_arrays ), $class_arrays, $pagination );
+		// $pagination = str_replace( array_keys( $class_arrays ), $class_arrays, $pagination );
 
-		echo wp_kses_post( $pagination );
+		// echo wp_kses_post( $pagination );
+	?>
+	<?php
+	// get pagination type from global settings
+	$global_settings = delicious_recipes_get_global_settings();
+	$pagination_type = isset( $global_settings['archivePaginationStyle'] ) && ! empty( $global_settings['archivePaginationStyle'] ) ? $global_settings['archivePaginationStyle'] : 'simple';
+
+	echo delicious_recipes_display_recipes_pagination( [ 'pagination_type' => $pagination_type ] );
 	?>
 </div>
 

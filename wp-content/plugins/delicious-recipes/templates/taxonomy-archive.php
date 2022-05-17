@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $global_settings   = delicious_recipes_get_global_settings();
 $showArchiveHeader = isset( $global_settings['enableArchiveHeader']['0'] ) && 'yes' === $global_settings['enableArchiveHeader']['0'] ? true : false;
+$view_type         = delicious_recipes_get_archive_layout();
 
 get_header(); 
 
@@ -57,10 +58,9 @@ endif;
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
 				<div id="dr-recipe-archive" class="dr-archive-list-wrapper">
-					<div class="dr-archive-list-gridwrap" itemscope itemtype="http://schema.org/ItemList">
+					<div class="dr-archive-list-gridwrap <?php echo esc_attr( $view_type ); ?>" itemscope itemtype="http://schema.org/ItemList">
 						<?php
 							$position = 1; 
-							$view_type = delicious_recipes_get_archive_layout();
 							if ( have_posts() ) {
 								while ( have_posts() ) {
 									the_post();

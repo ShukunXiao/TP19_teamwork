@@ -14,7 +14,7 @@ export class RecipeCard extends Component {
 			<Fragment>
 				<div
 					id="dr-recipe-meta-main"
-					className="dr-summary-holder dr-recipe-card-block"
+					className="dr-summary-holder dr-recipe-card-block default"
 					style={{
 						background: `rgba(${delrcp.setting_options.primaryColorRGB}, 0.05)`,
 					}}

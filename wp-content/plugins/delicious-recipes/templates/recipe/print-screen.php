@@ -259,7 +259,6 @@ if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
 											$instruction       = isset( $instruct['instruction'] ) ? $instruct['instruction'] : '';
 											$instruction_notes = isset( $instruct['instructionNotes'] ) ? $instruct['instructionNotes'] : '';
 											$instruction_image = isset( $instruct['image'] ) && ! empty( $instruct['image'] ) ? $instruct['image'] : false;
-											$instruction_video = isset( $instruct['videoURL'] ) && ! empty( $instruct['videoURL'] ) ? $instruct['videoURL'] : false;
 										
 											echo '<li>';
 												echo esc_html( $instruction_title );

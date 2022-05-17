@@ -16,7 +16,7 @@ class Delicious_Recipes_Whats_New {
      */
 	public function __construct() {
 
-		add_action( 'admin_menu', array( $this, 'add_whats_new_menu' ) );
+		add_action( 'admin_menu', array( $this, 'add_whats_new_menu' ), 20 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 	}
 
@@ -25,13 +25,13 @@ class Delicious_Recipes_Whats_New {
 	*/
 	public function add_whats_new_menu(){
 		add_submenu_page( 
-			'edit.php?post_type=' . DELICIOUS_RECIPE_POST_TYPE, 
+			'delicious-recipes', 
 			__( "What's New", 'delicious-recipes' ), 
 			__( "What's New", 'delicious-recipes' ), 
 			'manage_options', 
 			'delicious_recipes_whats_new', 
 			array( $this, 'display_whats_new_menu_page' ),
-			10
+			0
 		);
 	}
 
@@ -53,7 +53,7 @@ class Delicious_Recipes_Whats_New {
 
 		$screen = get_current_screen();
 
-		if ( isset( $screen->id ) && 'recipe_page_delicious_recipes_whats_new' === $screen->id ) {
+		if ( isset( $screen->id ) && 'delicious-recipes_page_delicious_recipes_whats_new' === $screen->id ) {
 
 			$whatsNew_deps = include_once plugin_dir_path( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/admin/build/whatsNew.asset.php';
 

@@ -28,7 +28,7 @@ class Delicious_Recipes_EDD_Handler {
 	 * @return void
 	 */
 	public function init_hooks() {
-		add_action( 'admin_menu', array( $this, 'upgrade_to_pro_menu' ) );
+		add_action( 'admin_menu', array( $this, 'upgrade_to_pro_menu' ), 20 );
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Delicious_Recipes_EDD_Handler {
 
 		global $submenu;
 		$pricing_url = $this->edd_api_url . 'pricing';
-		$submenu['edit.php?post_type=recipe'][] = array( __( 'Upgrade to Pro', 'delicious-recipes' ), 'manage_options', $pricing_url);
+		$submenu['delicious-recipes'][] = array( __( 'Upgrade to Pro', 'delicious-recipes' ), 'manage_options', $pricing_url);
 	}
 
 	/**

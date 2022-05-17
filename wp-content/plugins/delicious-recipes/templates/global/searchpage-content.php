@@ -65,7 +65,7 @@ $dashboard_page         = isset( $dashboard_page ) && $dashboard_page ? true : f
                         endwhile;
                         wp_reset_postdata();
                     ?>
-                </div><!-- .dr-search-item-wrap -->
+                </div>
         <?php 
             else :
         ?>
@@ -74,9 +74,13 @@ $dashboard_page         = isset( $dashboard_page ) && $dashboard_page ? true : f
                 </span>
         <?php
             endif;
+            $pagination_type = isset( $global_settings['archivePaginationStyle'] ) && ! empty( $global_settings['archivePaginationStyle'] ) ? $global_settings['archivePaginationStyle'] : 'simple';
+            echo '<div class="dr-archive-pagination">'; 
+                echo delicious_recipes_display_recipes_pagination( [ 'pagination_type' => $pagination_type, 'query' => $recipe_search ] );
+            echo '</div>';
         ?>
         
-        <nav class="navigation pagination" role="navigation" aria-label="Posts">
+        <!-- <nav class="navigation pagination" role="navigation" aria-label="Posts">
             <h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'delicious-recipes' ); ?></h2>
             <div class="nav-links">
                 <?php 
@@ -115,7 +119,7 @@ $dashboard_page         = isset( $dashboard_page ) && $dashboard_page ? true : f
                     }
                 ?>
             </div>
-        </nav>
+        </nav> -->
 	</div>
 </div><!-- .dr-advance-search -->
 

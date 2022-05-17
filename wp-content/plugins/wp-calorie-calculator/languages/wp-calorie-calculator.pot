@@ -1,0 +1,786 @@
+# Copyright (C) 2022 WP Calorie Calculator
+# This file is distributed under the same license as the WP Calorie Calculator package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Calorie Calculator\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin/class-wp-calorie-calculator-admin.php:77
+msgid "Thank you for installing our WP Calorie Calculator plugin. The next step is to <a href=\"admin.php?page=wp-calorie-calculator\">configure the settings of the plugin</a>."
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:114
+msgid "Copied!"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:115, admin/partials/wp-calorie-calculator-admin-display.php:200
+msgid "Copy shortcode"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:134
+msgid "Create your Mifflin - St. Jeor Calorie Calculator"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:135
+msgid "Calorie Calculator"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:177, admin/partials/wp-calorie-calculator-admin-display.php:208, admin/partials/wp-calorie-calculator-admin-display.php:240
+msgid "Settings"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:193, admin/partials/wp-calorie-calculator-admin-display.php:957
+msgid "The Pro edition of WP Calorie Calculator is out!"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:194, admin/partials/wp-calorie-calculator-admin-display.php:958
+msgid "Mailchimp integration, flexible settings, custom templates and other exciting additions - try now and make your website users’ favorite place to be!"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:195, admin/partials/wp-calorie-calculator-admin-display.php:959
+msgid "Get it"
+msgstr ""
+
+#: admin/class-wp-calorie-calculator-admin.php:210, admin/class-wp-calorie-calculator-admin.php:211
+msgid "Go Pro"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:269
+msgid "Main title color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:273
+msgid "Main title border color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:277
+msgid "Text color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:281
+msgid "Switcher circle color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:285
+msgid "Switcher background color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:289
+msgid "Labels color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:293
+msgid "Radio button color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:297
+msgid "Tooltip icon color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:301
+msgid "Input border color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:305
+msgid "Result background color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:309
+msgid "Result title color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:313
+msgid "Result text color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:317
+msgid "Result icon background"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:321
+msgid "Result icon color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:325
+msgid "Button background color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:329
+msgid "Button background color on hover"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:333
+msgid "Button text color"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:350, public/class-wp-calorie-calculator-public.php:113, admin/partials/wp-calorie-calculator-admin-display.php:66
+msgid "Maintain Weight"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:354, public/class-wp-calorie-calculator-public.php:116, admin/partials/wp-calorie-calculator-admin-display.php:73
+msgid "Weight Loss"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:358, public/class-wp-calorie-calculator-public.php:119, admin/partials/wp-calorie-calculator-admin-display.php:80
+msgid "Extreme Weight Loss"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:362, public/class-wp-calorie-calculator-public.php:122, admin/partials/wp-calorie-calculator-admin-display.php:87
+msgid "Weight Gain"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:366, public/class-wp-calorie-calculator-public.php:125, admin/partials/wp-calorie-calculator-admin-display.php:94
+msgid "Fast Weight Gain"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:382, public/class-wp-calorie-calculator-public.php:147, admin/partials/wp-calorie-calculator-admin-display.php:32
+msgid "Sedentary"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:383, admin/partials/wp-calorie-calculator-admin-display.php:33
+msgid "Spend most of the day sitting, with little or no exercise"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:387, public/class-wp-calorie-calculator-public.php:150, admin/partials/wp-calorie-calculator-admin-display.php:37
+msgid "Light"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:388, admin/partials/wp-calorie-calculator-admin-display.php:38
+msgid "Exercise 1-3 times/week"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:392, public/class-wp-calorie-calculator-public.php:153, admin/partials/wp-calorie-calculator-admin-display.php:42
+msgid "Moderate"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:393, admin/partials/wp-calorie-calculator-admin-display.php:43
+msgid "Exercise 4-5 times/week"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:397, public/class-wp-calorie-calculator-public.php:156, admin/partials/wp-calorie-calculator-admin-display.php:47
+msgid "Active"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:398, admin/partials/wp-calorie-calculator-admin-display.php:48
+msgid "Daily exercise or intense exercise 3-4 times/week"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:402, public/class-wp-calorie-calculator-public.php:159, admin/partials/wp-calorie-calculator-admin-display.php:52
+msgid "Very Active"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:403, admin/partials/wp-calorie-calculator-admin-display.php:53
+msgid "Intense exercise 6-7 times/week"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:407, public/class-wp-calorie-calculator-public.php:162, admin/partials/wp-calorie-calculator-admin-display.php:57
+msgid "Extra Active"
+msgstr ""
+
+#: includes/class-wp-calorie-calculator.php:408, admin/partials/wp-calorie-calculator-admin-display.php:58
+msgid "Very intense exercise daily, or physical job"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:75
+msgid "Calorie Calculator results have been successfully sent to your email address!"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:76
+msgid "An error has occurred."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:77
+msgid "Please, fill in all fields correctly."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:132, public/partials/wp-calorie-calculator-public-display.php:66
+msgid "Male"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:135, public/partials/wp-calorie-calculator-public-display.php:67
+msgid "Female"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:141, public/partials/wp-calorie-calculator-public-display.php:92
+msgid "cm"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:141, public/partials/wp-calorie-calculator-public-display.php:92
+msgid "ft"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:141, public/partials/wp-calorie-calculator-public-display.php:97
+msgid "in"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:143, public/partials/wp-calorie-calculator-public-display.php:82
+msgid "kg"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:143, public/partials/wp-calorie-calculator-public-display.php:82
+msgid "lbs"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:167, admin/partials/wp-calorie-calculator-admin-display.php:121
+msgid "Your optimal calories"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:168
+msgid "Hi!"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:169, admin/partials/wp-calorie-calculator-admin-display.php:124
+msgid "It’s Calorie Calculator."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:170, admin/partials/wp-calorie-calculator-admin-display.php:125
+msgid "Looks like you requested your target daily calorie intake."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:171
+msgid "It is %s"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:172, admin/partials/wp-calorie-calculator-admin-display.php:141
+msgid "Your parameters:"
+msgstr ""
+
+#. translators: %s: sex
+#: public/class-wp-calorie-calculator-public.php:173, admin/partials/wp-calorie-calculator-admin-display.php:143
+msgid "Sex: %s"
+msgstr ""
+
+#. translators: %s: age
+#: public/class-wp-calorie-calculator-public.php:174, admin/partials/wp-calorie-calculator-admin-display.php:145
+msgid "Age: %s"
+msgstr ""
+
+#. translators: %s: height
+#: public/class-wp-calorie-calculator-public.php:175, admin/partials/wp-calorie-calculator-admin-display.php:147
+msgid "Height: %s"
+msgstr ""
+
+#. translators: %s: weight
+#: public/class-wp-calorie-calculator-public.php:176, admin/partials/wp-calorie-calculator-admin-display.php:149
+msgid "Weight: %s"
+msgstr ""
+
+#. translators: %s: activity
+#: public/class-wp-calorie-calculator-public.php:177, admin/partials/wp-calorie-calculator-admin-display.php:151
+msgid "Activity level: %s"
+msgstr ""
+
+#. translators: %s: goal
+#: public/class-wp-calorie-calculator-public.php:178, admin/partials/wp-calorie-calculator-admin-display.php:153
+msgid "Goal: %s"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:179
+msgid "You go!"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:180, public/class-wp-calorie-calculator-public.php:189, admin/partials/wp-calorie-calculator-admin-display.php:155, admin/partials/wp-calorie-calculator-admin-display.php:166
+msgid "Best regards,"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:181, public/class-wp-calorie-calculator-public.php:190, admin/partials/wp-calorie-calculator-admin-display.php:156, admin/partials/wp-calorie-calculator-admin-display.php:167
+msgid "Calorie Calculator."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:185, admin/partials/wp-calorie-calculator-admin-display.php:158
+msgid "New Calorie Calculator user"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:186, admin/partials/wp-calorie-calculator-admin-display.php:160
+msgid "Hey, someone just shared their email address with you."
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:187
+msgid "Here it is: %s"
+msgstr ""
+
+#: public/class-wp-calorie-calculator-public.php:188, admin/partials/wp-calorie-calculator-admin-display.php:165
+msgid "Make it the beginning of your brand’s active conversation."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:17, public/partials/wp-calorie-calculator-public-display.php:20
+msgid "CALCULATE YOUR OPTIMAL CALORIES"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:104
+msgid "Small"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:108, admin/partials/wp-calorie-calculator-admin-display.php:815, admin/partials/wp-calorie-calculator-admin-display.php:816
+msgid "Normal"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:112
+msgid "Large"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:116
+msgid "Extra Large"
+msgstr ""
+
+#. translators: %s: user_name
+#: admin/partials/wp-calorie-calculator-admin-display.php:123
+msgid "Hi, %s!"
+msgstr ""
+
+#. translators: %s: result
+#: admin/partials/wp-calorie-calculator-admin-display.php:127
+msgid "It is %s calories per day"
+msgstr ""
+
+#. translators: %s: index_bmi
+#: admin/partials/wp-calorie-calculator-admin-display.php:129
+msgid "Body Mass Index (BMI): %s"
+msgstr ""
+
+#. translators: %s: bmi_class
+#: admin/partials/wp-calorie-calculator-admin-display.php:131
+msgid "BMI Classification: %s"
+msgstr ""
+
+#. translators: %s: index_bmr
+#: admin/partials/wp-calorie-calculator-admin-display.php:133
+msgid "Basal Metabolic Rate (BMR): %s calories per day"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:134
+msgid "Macronutrient Balance:"
+msgstr ""
+
+#. translators: %s: fats
+#: admin/partials/wp-calorie-calculator-admin-display.php:136
+msgid "Fats: %s g"
+msgstr ""
+
+#. translators: %s: protein
+#: admin/partials/wp-calorie-calculator-admin-display.php:138
+msgid "Protein: %s g"
+msgstr ""
+
+#. translators: %s: carbs
+#: admin/partials/wp-calorie-calculator-admin-display.php:140
+msgid "Carbs: %s g"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:154
+msgid "Keep up the good work!"
+msgstr ""
+
+#. translators: %s: user_name
+#: admin/partials/wp-calorie-calculator-admin-display.php:162
+msgid "User's name: %s"
+msgstr ""
+
+#. translators: %s: user_email
+#: admin/partials/wp-calorie-calculator-admin-display.php:164
+msgid "User's email: %s"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:183
+msgid "1. Choose the settings you'd like to use for this specified instance of the shortcode on your website (widget, a particular page, or something else)."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:184
+msgid "2. Copy the shortcode and paste it wherever you need."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:196
+msgid "Your Shortcode"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:215, admin/partials/wp-calorie-calculator-admin-display.php:376
+msgid "Calculation"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:223, admin/partials/wp-calorie-calculator-admin-display.php:673
+msgid "Styling"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:231, admin/partials/wp-calorie-calculator-admin-display.php:828
+msgid "Email templates"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:245
+msgid "Main Calculator Title"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:249, admin/partials/wp-calorie-calculator-admin-display.php:388, admin/partials/wp-calorie-calculator-admin-display.php:476
+msgid "Hide"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:255, admin/partials/wp-calorie-calculator-admin-display.php:395, admin/partials/wp-calorie-calculator-admin-display.php:483
+msgid "Show"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:268
+msgid "Title align"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:271, admin/partials/wp-calorie-calculator-admin-display.php:316, admin/partials/wp-calorie-calculator-admin-display.php:348, admin/partials/wp-calorie-calculator-admin-display.php:384, admin/partials/wp-calorie-calculator-admin-display.php:435, admin/partials/wp-calorie-calculator-admin-display.php:470, admin/partials/wp-calorie-calculator-admin-display.php:507, admin/partials/wp-calorie-calculator-admin-display.php:574, admin/partials/wp-calorie-calculator-admin-display.php:681, admin/partials/wp-calorie-calculator-admin-display.php:711, admin/partials/wp-calorie-calculator-admin-display.php:750, admin/partials/wp-calorie-calculator-admin-display.php:760, admin/partials/wp-calorie-calculator-admin-display.php:773, admin/partials/wp-calorie-calculator-admin-display.php:808, admin/partials/wp-calorie-calculator-admin-display.php:831
+msgid "These features are available in the PRO version"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:276
+msgid "Center"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:286
+msgid "Calculation Result type"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:289
+msgid "Email"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:297
+msgid "Instant view"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:305
+msgid "Enter your email to receive notifications about new calculator users (who requested results to their email) and their email addresses"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:313
+msgid "Mailchimp"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:323
+msgid "Enter your Mailchimp API key if you’d like to collect emails"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:328
+msgid "Your Mailchimp API key"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:329
+msgid "Connect"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:335
+msgid "Choose your Mailchimp email list"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:337
+msgid "Choose Mailchimp email list"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:345
+msgid "Zapier"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:355
+msgid "In Zapier, create a zap and select \"Webhooks by Zapier\" as the launch application and \"Catch Hook\" as the launch event type. Zapier will give you the Custom Webhook URL - paste it into this field and save your settings. All data will now be sent to your Zapier account."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:357
+msgid "Note: a paid Zapier plan is required!"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:380
+msgid "Default units system"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:402, public/partials/wp-calorie-calculator-public-display.php:47
+msgid "Imperial"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:408
+msgid "The imperial system is a system of weights and measures that includes pounds, inches, feet etc."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:416, public/partials/wp-calorie-calculator-public-display.php:53
+msgid "Metric"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:422
+msgid "International decimal system of weights and measures, based on the meter for length and the kilogram for mass."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:432
+msgid "Show results"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:445
+msgid "Show Basal Metabolic Rate (BMR)"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:450
+msgid "Show Body Mass Index (BMI)"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:455
+msgid "Show BMI Type"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:460
+msgid "Show Macronutrient Balance"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:467
+msgid "Choose the formula"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:489
+msgid "Mifflin-St Jeor formula"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:493
+msgid "Harris-Benedict formula"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:497
+msgid "World Health Organization"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:504
+msgid "Activity Levels"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:516, admin/partials/wp-calorie-calculator-admin-display.php:583
+msgid "Name"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:517
+msgid "Description"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:518, admin/partials/wp-calorie-calculator-admin-display.php:585
+msgid "Coefficient"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:565, admin/partials/wp-calorie-calculator-admin-display.php:662
+msgid "Add Goal"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:571
+msgid "Goals"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:584
+msgid "Macronutrient Ratio"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:676
+msgid "Color settings"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:684
+msgid "Color schema"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:690
+msgid "Custom colors"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:699
+msgid "Choose a general color scheme"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:714
+msgid "You can customize the color scheme to your own preference in the PRO version."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:738
+msgid "Layout style"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:743
+msgid "Compact Pretty"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:747
+msgid "Simple “Plain HTML”"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:757
+msgid "Extended"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:770
+msgid "Layout settings"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:779
+msgid "Form layout:"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:782
+msgid "One-screen"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:786
+msgid "Multi-step"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:790
+msgid "Activity&Goal layout:"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:794
+msgid "Slider"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:798
+msgid "Grid"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:805
+msgid "Base font size"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:838
+msgid "Enter the text that is sent to users and admin after completion of calculation"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:844
+msgid "The user's name"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:848
+msgid "The user's email address"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:852
+msgid "Body Mass Index (BMI)"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:856
+msgid "BMI Class"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:860
+msgid "Basal Metabolic Rate (BMR)"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:864
+msgid "Target calorie intake per day"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:868
+msgid "Calculated fats, g"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:872
+msgid "Calculated protein, g"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:876
+msgid "Calculated carbs, g"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:880
+msgid "The user's sex"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:884
+msgid "The user's age"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:888
+msgid "The user's height"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:892
+msgid "The user's weight"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:896
+msgid "The user's activity level"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:900
+msgid "The user's desired goal"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:907
+msgid "Email template to user"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:913
+msgid "Fill in the From Name and From fields - for example, WP Calorie Calculator and calculator. Leave these fields blank if you want to use the default WordPress settings or configured on the site SMTP."
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:915
+msgid "From Name"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:918
+msgid "From"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:926, admin/partials/wp-calorie-calculator-admin-display.php:939
+msgid "Subject"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:928, admin/partials/wp-calorie-calculator-admin-display.php:942
+msgid "Body"
+msgstr ""
+
+#: admin/partials/wp-calorie-calculator-admin-display.php:936
+msgid "Notification template"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:58
+msgid "Basic Information"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:63
+msgid "m / f"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:64
+msgid "Sex"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:72
+msgid "Age"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:74
+msgid "years"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:79
+msgid "Weight"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:87
+msgid "Height"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:108
+msgid "Goal"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:120
+msgid "Activity Level"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:167
+msgid "Enter your email for results:"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:172
+msgid "my@email.com"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:156
+msgid "Your results:"
+msgstr ""
+
+#: public/partials/wp-calorie-calculator-public-display.php:160
+msgid "Target calorie intake per day:"
+msgstr ""

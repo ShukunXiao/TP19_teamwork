@@ -200,7 +200,14 @@ class Delicious_Recipes_Template_Hooks {
         $global_card_layout = isset( $global_settings['defaultCardLayout'] ) && ! empty( $global_settings['defaultCardLayout'] ) ? $global_settings['defaultCardLayout'] : 'default';
         $card_layout        = $card_layout ? $card_layout : $global_card_layout;
 
-        delicious_recipes_get_template_part( 'recipe/recipe-block/summary', $card_layout );
+        $free_layouts = array( 'default', 'layout-1', 'layout-2' );
+        $card_layout = in_array( $card_layout, $free_layouts ) ? $card_layout : ( delicious_recipes_is_pro_activated() ? $card_layout : 'default');
+
+        if( ! in_array( $card_layout, $free_layouts ) && function_exists( 'delicious_recipes_pro_get_template_part' ) ) {
+            delicious_recipes_pro_get_template_part( 'recipe/recipe-block/summary', $card_layout );
+        } else {
+            delicious_recipes_get_template_part( 'recipe/recipe-block/summary', $card_layout );
+        }
     }
 
     /**

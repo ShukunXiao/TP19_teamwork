@@ -210,6 +210,10 @@ class DeliciousPublic {
 
 		wp_enqueue_style( 'delicious-recipes-single', plugin_dir_url( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/public/css' . $asset_script_path . 'delicious-recipes-public' . $min_prefix . '.css', array(), DELICIOUS_RECIPES_VERSION, 'all' );
 
+		$infiniteScroll_deps = include_once plugin_dir_path( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/admin/build/infiniteScroll.asset.php';
+
+		wp_enqueue_script( 'delicious-recipes-infiniteScroll', plugin_dir_url( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/admin/build/infiniteScroll.js', $infiniteScroll_deps['dependencies'], $infiniteScroll_deps['version'], true );
+
 		wp_enqueue_style( 'jquery-rateyo', plugin_dir_url( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/lib/jquery-rateyo/jquery.rateyo.min.css', array(), '2.3.2', 'all' );
 		wp_enqueue_script( 'jquery-rateyo',  plugin_dir_url( DELICIOUS_RECIPES_PLUGIN_FILE ) . '/assets/lib/jquery-rateyo/jquery.rateyo.min.js', array( 'jquery' ), '2.3.2', true );
 

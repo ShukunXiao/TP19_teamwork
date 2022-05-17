@@ -3,6 +3,7 @@
  */
 
 import apiFetch from "@wordpress/api-fetch";
+import { applyFilters } from "@wordpress/hooks";
 import { RecipeCard } from "../common/RecipeCard";
 import { LayoutOne } from "../common/LayoutOne";
 import { LayoutTwo } from "../common/LayoutTwo";
@@ -99,6 +100,69 @@ class Delicious_Recipes_Recipe_Card extends Component {
 		const { title, heading, Recipe, layout } = attributes;
 		const { recipes, RecipeOptions, isLoading } = this.state;
 
+		const layoutOptions = applyFilters("delicious_recipes_card_layouts", [
+			{ label: "Default Layout", value: "default" },
+			{ label: "Layout One", value: "layout-1" },
+			{ label: "Layout Two", value: "layout-2" },
+		]);
+
+		const layoutTemplates = applyFilters(
+			"delicious_recipes_card_layout_templates",
+			[
+				{
+					id: "default",
+					label: "Default Layout",
+					template: function (recipe) {
+						return (
+							<RecipeCard
+								recipe={recipe}
+								preventClick={this.preventClick}
+							/>
+						);
+					},
+				},
+				{
+					id: "layout-1",
+					label: "Layout One",
+					template: function (recipe) {
+						return (
+							<LayoutOne
+								recipe={recipe}
+								preventClick={this.preventClick}
+							/>
+						);
+					},
+				},
+				{
+					id: "layout-2",
+					label: "Layout Two",
+					template: function (recipe) {
+						return (
+							<LayoutTwo
+								recipe={recipe}
+								preventClick={this.preventClick}
+							/>
+						);
+					},
+				},
+			],
+			this.preventClick,
+		);
+
+		const layoutTemplate = (layout &&
+			layoutTemplates.find((template) => template.id === layout)) || {
+			id: "default",
+			label: "Default Layout",
+			template: function (recipe) {
+				return (
+					<RecipeCard
+						recipe={recipe}
+						preventClick={this.preventClick}
+					/>
+				);
+			},
+		};
+
 		return (
 			<Fragment>
 				<InspectorControls>
@@ -146,11 +210,7 @@ class Delicious_Recipes_Recipe_Card extends Component {
 								"delicious-recipes"
 							)}
 							value={layout}
-							options={[
-								{ label: "Default Layout", value: "default" },
-								{ label: "Layout One", value: "layout-1" },
-								{ label: "Layout Two", value: "layout-2" },
-							]}
+							options={layoutOptions}
 							onChange={(value) =>
 								setAttributes({ layout: value })
 							}
@@ -172,24 +232,10 @@ class Delicious_Recipes_Recipe_Card extends Component {
 				<div className="te-post-wrap-outer">
 					{recipes.length > 0 &&
 						recipes.map((recipe, index) => {
-							return layout && layout === "layout-1" ? (
-								<LayoutOne
-									key={index}
-									recipe={recipe}
-									preventClick={this.preventClick}
-								/>
-							) : layout && layout === "layout-2" ? (
-								<LayoutTwo
-									key={index}
-									recipe={recipe}
-									preventClick={this.preventClick}
-								/>
-							) : (
-								<RecipeCard
-									key={index}
-									recipe={recipe}
-									preventClick={this.preventClick}
-								/>
+							return (
+								<Fragment key={index}>
+									{layoutTemplate.template(recipe)}
+								</Fragment>
 							);
 						})}
 				</div>

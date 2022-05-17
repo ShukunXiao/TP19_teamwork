@@ -5,7 +5,7 @@ Tags: recipe, food, cooking, recipes, chef, ingredients
 Requires at least: 5.1
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.3.7
+Stable tag: 1.3.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -188,6 +188,15 @@ Yes, you can provide us with your valuable feedback for the Delicious Recipes pl
 11. Recipes - Gallery
 
 == Changelog ==
+
+= 1.3.8 - 11th May 2022 =
+* New Feature - Shortcode [dr_recipe_archives] support added for recipe listings with num_posts, carousel, layout, taxonomy, and terms parameters.
+* New Feature - Archive Pagination - Supports numbered or infinite pagination for taxonomy and search pages.
+* Enhancement - Admin menu splitted into two sections - Recipes and Delicious Recipes.
+* Enhancement - Ingredients quantity decimal count rounded to 2 decimal places.
+* Fixes - Ingredients quantity counter increment/decrement fix while print is disabled.
+* Fixes - Videos not playing in Instructions section fix.
+* Fixes - Minor bug fixes.
 
 = 1.3.7 - 21st April 2022 =
 * Fixes - Videos not playing in lightGallery fix.

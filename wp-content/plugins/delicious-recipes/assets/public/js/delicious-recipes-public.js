@@ -229,52 +229,64 @@
 			},
 		}).done(function () {
 			container.removeClass("loading");
+			// update likes in floatingBarData
+			if (typeof recipeProGlobal !== "undefined") {
+				let likesParent = container.parent(".dr-floating-box .post-like .single-like");
+				if( likesParent.length > 0 ) {
+					let path = window.location.href;
+					let data = recipeProGlobal.filter((item) => item.path === path);
+					if (data[0]) {
+						data[0].likes = container.parent(".single-like").html();
+					}
+				}
+			}
 		});
 	});
 
 	/****   Wishlist a Recipe   ****/
-	if ($(".dr-recipe-wishlist span.dr-bookmark-wishlist").length) {
-		$(document).on(
-			"click",
-			".dr-recipe-wishlist span.dr-bookmark-wishlist",
-			function (e) {
-				e.preventDefault();
-				var thisHeart = $(this),
-					recipeID = thisHeart.data("recipe-id");
+	$(document).on("click", ".dr-recipe-wishlist span.dr-bookmark-wishlist", function (e) {
+		e.preventDefault();
+		var thisHeart = $(this),
+			recipeID = thisHeart.data("recipe-id");
 
-				if (thisHeart.hasClass("dr-wishlist-is-bookmarked")) {
-					thisHeart.removeClass("dr-wishlist-is-bookmarked");
-					var addRemove = "remove";
-				} else {
-					thisHeart.addClass("dr-wishlist-is-bookmarked");
-					var addRemove = "add";
+		if (thisHeart.hasClass("dr-wishlist-is-bookmarked")) {
+			thisHeart.removeClass("dr-wishlist-is-bookmarked");
+			var addRemove = "remove";
+		} else {
+			thisHeart.addClass("dr-wishlist-is-bookmarked");
+			var addRemove = "add";
+		}
+
+		$.ajax({
+			type: "post",
+			url: delicious_recipes.ajax_url,
+			data: {
+				action: "delicious_recipes_wishlist",
+				add_remove: addRemove,
+				recipe_id: recipeID,
+			},
+			beforeSend: function () {
+				thisHeart.addClass("loading");
+			},
+			success: function (data) {
+				thisHeart.find(".dr-wishlist-total").html(data.data.wishlists);
+				thisHeart.find(".dr-wishlist-info").html(data.data.message);
+			},
+		}).done(function () {
+			thisHeart.removeClass("loading");
+			// update wishilist in floatingBarData
+			if (typeof recipeProGlobal !== "undefined") {
+				let wishlistParent = thisHeart.parent(".dr-floating-box .dr-add-to-wishlist-single .dr-recipe-wishlist");
+				if( wishlistParent.length > 0 ) {
+					let path = window.location.href;
+					let data = recipeProGlobal.filter((item) => item.path === path);
+					if (data[0]) {
+						data[0].wishlist = thisHeart.parent(".dr-recipe-wishlist").html();
+					}
 				}
-
-				$.ajax({
-					type: "post",
-					url: delicious_recipes.ajax_url,
-					data: {
-						action: "delicious_recipes_wishlist",
-						add_remove: addRemove,
-						recipe_id: recipeID,
-					},
-					beforeSend: function () {
-						thisHeart.addClass("loading");
-					},
-					success: function (data) {
-						thisHeart
-							.find(".dr-wishlist-total")
-							.html(data.data.wishlists);
-						thisHeart
-							.find(".dr-wishlist-info")
-							.html(data.data.message);
-					},
-				}).done(function () {
-					thisHeart.removeClass("loading");
-				});
 			}
-		);
-	}
+		});
+	});
 	if ($(".dr-recipe-wishlist span.dr-popup-user__registration").length) {
 		// Get the modal
 		var modal = document.getElementById(
@@ -338,10 +350,8 @@
 				type: "post",
 				beforeSend: function () {
 					loginform.addClass("dr-loading");
-					$(".delicious-recipes-success-msg")
-						.hide();
-					$(".delicious-recipes-error-msg")
-						.hide();		
+					$(".delicious-recipes-success-msg").hide();
+					$(".delicious-recipes-error-msg").hide();
 				},
 				success: function (response) {
 					if (response.success) {
@@ -468,16 +478,18 @@ function recipeScripts() {
 				let printBtn = document.getElementById(
 					"dr-single-recipe-print-" + recipeID
 				);
-				let default_print_lnk = printBtn.getAttribute("href");
-				var default_print_attrs = default_print_lnk.split("?");
-				// This may need something more complex...
-				var new_print_attrs =
-					"print_recipe=true&recipe_servings=" + newServe;
-				// This changes the href of the link to the new one.
-				printBtn.setAttribute(
-					"href",
-					default_print_attrs[0] + "?" + new_print_attrs
-				);
+				if(printBtn !== null){
+					let default_print_lnk = printBtn.getAttribute("href");
+					var default_print_attrs = default_print_lnk.split("?");
+					// This may need something more complex...
+					var new_print_attrs =
+						"print_recipe=true&recipe_servings=" + newServe;
+					// This changes the href of the link to the new one.
+					printBtn.setAttribute(
+						"href",
+						default_print_attrs[0] + "?" + new_print_attrs
+					);
+				}
 				ingredientQuantities.forEach(function (qty) {
 					let ingredientQty = qty.getAttribute("data-original");
 					ingredientQty = math.fraction(ingredientQty);
@@ -488,6 +500,8 @@ function recipeScripts() {
 						newIngredientQty = math.fraction(newIngredientQty);
 						newIngredientQty =
 							newIngredientQty.n + "/" + newIngredientQty.d;
+					} else {
+						newIngredientQty = newIngredientQty.toFixed(2);
 					}
 					qty.innerText = newIngredientQty;
 				});

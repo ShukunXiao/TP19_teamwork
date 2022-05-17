@@ -7,7 +7,7 @@
  * Author URI:      https://wpdelicious.com
  * Text Domain:     delicious-recipes
  * Domain Path:     /languages
- * Version:         1.3.7
+ * Version:         1.3.8
  * Requires at least: 5.1
  * Requires PHP: 5.6
  * 
@@ -45,7 +45,7 @@ if ( ! function_exists( 'delicious_recipes_fs' ) ) {
                     'contact'        => false,
                     'support'        => false,
                     'parent'         => array(
-                        'slug'    => 'edit.php?post_type=recipe',
+                        'slug'    => 'delicious-recipes',
                     ),
                 ),
             ) );
